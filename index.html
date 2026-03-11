@@ -44,6 +44,10 @@
             <button type="button" class="side-panel-prof-btn" data-profession="inscription">Inscription</button>
             <div class="side-panel-crafter">Arats</div>
           </li>
+          <li class="side-panel-item">
+            <button type="button" class="side-panel-prof-btn" data-profession="cooking">Cooking</button>
+            <div class="side-panel-crafter">Arats</div>
+          </li>
         </ul>
       </div>
       <div class="side-panel-tab" aria-hidden="true"><span class="side-panel-tab-arrow" aria-hidden="true">←</span></div>
@@ -88,6 +92,7 @@
     <button type="button" id="tab-tailoring" class="tab-btn" role="tab" aria-selected="false" data-profession="tailoring">Tailoring</button>
     <button type="button" id="tab-alchemy" class="tab-btn" role="tab" aria-selected="false" data-profession="alchemy">Alchemy</button>
     <button type="button" id="tab-inscription" class="tab-btn" role="tab" aria-selected="false" data-profession="inscription">Inscription</button>
+    <button type="button" id="tab-cooking" class="tab-btn" role="tab" aria-selected="false" data-profession="cooking">Cooking</button>
   </nav>
 
   <main class="main-content">
@@ -229,6 +234,24 @@
             </tr>
           </thead>
           <tbody id="inscription-tbody">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="cooking" class="profession-section" role="tabpanel" aria-labelledby="tab-cooking" hidden>
+      <div class="table-wrapper">
+        <table class="profit-table" aria-label="Cooking items profit margin">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Materials needed</th>
+              <th>Selling price</th>
+              <th>Profit margin</th>
+            </tr>
+          </thead>
+          <tbody id="cooking-tbody">
             <!-- Filled by JS -->
           </tbody>
         </table>

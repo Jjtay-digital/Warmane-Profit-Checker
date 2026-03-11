@@ -45,7 +45,8 @@
     Leatherworking: 'leatherworking-tbody',
     Tailoring: 'tailoring-tbody',
     Alchemy: 'alchemy-tbody',
-    Inscription: 'inscription-tbody'
+    Inscription: 'inscription-tbody',
+    Cooking: 'cooking-tbody'
   };
 
   function formatGold(value) {
@@ -191,6 +192,11 @@
       { item: "Glyph of Death Coil", wowheadItemId: 42457, materials: [ { label: "1x Ink of the Sea", price: 0 }, { label: "1x Snowfall Ink", price: 0 }, { label: "1x Light Parchment", price: 0 } ], sellingPrice: 0 },
       { item: "Glyph of Psychic Scream", wowheadItemId: 42410, materials: [ { label: "1x Ink of the Sea", price: 0 }, { label: "1x Snowfall Ink", price: 0 }, { label: "1x Light Parchment", price: 0 } ], sellingPrice: 0 },
       { item: "Glyph of Execution", wowheadItemId: 43416, materials: [ { label: "1x Ink of the Sea", price: 0 }, { label: "1x Snowfall Ink", price: 0 }, { label: "1x Light Parchment", price: 0 } ], sellingPrice: 0 }
+    ],
+    Cooking: [
+      { item: "Fish Feast", wowheadItemId: 43015, materials: [ { label: "2x Musselback Sculpin", price: 0 }, { label: "2x Glacial Salmon", price: 0 }, { label: "2x Nettlefish", price: 0 }, { label: "1x Northern Spices", price: 0 } ], sellingPrice: 0 },
+      { item: "Dragonfin Filet", wowheadItemId: 43000, materials: [ { label: "1x Dragonfin Angelfish", price: 0 }, { label: "1x Northern Spices", price: 0 } ], sellingPrice: 0 },
+      { item: "Great Feast", wowheadItemId: 34753, materials: [ { label: "1x Chunk o' Mammoth", price: 0 }, { label: "1x Shoveltusk Flank", price: 0 }, { label: "1x Worm Meat", price: 0 }, { label: "1x Chilled Meat", price: 0 }, { label: "1x Northern Spices", price: 0 } ], sellingPrice: 0 }
     ]
   };
 
