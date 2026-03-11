@@ -122,6 +122,31 @@ body {
   letter-spacing: 0.02em;
 }
 
+.realm-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+  color: #a8a6a3;
+}
+
+.realm-status-phase {
+  font-weight: 600;
+  color: #d4af37;
+}
+
+.realm-status-sep {
+  color: #5a5855;
+  user-select: none;
+}
+
+.realm-status-next {
+  color: #8a8885;
+}
+
 .server-time-bar {
   display: flex;
   flex-wrap: wrap;
