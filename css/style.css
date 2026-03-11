@@ -12,6 +12,129 @@ body {
   background: #1c1b19;
 }
 
+.side-panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 36px;
+  transition: width 0.2s ease;
+}
+
+.side-panel:hover {
+  width: 200px;
+}
+
+.side-panel-inner {
+  height: 100%;
+  display: flex;
+  background: #252422;
+  border-right: 1px solid #3d3b37;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.side-panel-content {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  padding: 1rem 0.75rem;
+}
+
+.side-panel:hover .side-panel-content {
+  opacity: 1;
+  overflow-y: auto;
+}
+
+.side-panel-tab {
+  flex-shrink: 0;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #a8a6a3;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 0.05em;
+}
+
+.side-panel:hover .side-panel-tab {
+  opacity: 0.5;
+}
+
+.side-panel-section {
+  margin-bottom: 1.25rem;
+}
+
+.side-panel-section:last-child {
+  margin-bottom: 0;
+}
+
+.side-panel-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #d4af37;
+  margin-bottom: 0.5rem;
+}
+
+.side-panel-professions,
+.side-panel-ign-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-panel-professions li,
+.side-panel-ign-list li {
+  margin-bottom: 0.25rem;
+}
+
+.side-panel-prof-btn {
+  display: block;
+  width: 100%;
+  padding: 0.35rem 0;
+  font-size: 0.85rem;
+  text-align: left;
+  color: #e8e6e3;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.side-panel-prof-btn:hover {
+  color: #d4af37;
+  background: #2d2b28;
+}
+
+.side-panel-ign-list {
+  font-size: 0.8rem;
+  color: #a8a6a3;
+}
+
+.side-panel-ign-list .ign-prof {
+  display: block;
+  color: #8a8885;
+  font-size: 0.75rem;
+}
+
+.side-panel-ign-list .ign-name {
+  color: #e8e6e3;
+}
+
+.side-panel-ign-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.35rem;
+}
+
 .site-header {
   padding: 1.5rem 1rem;
   text-align: center;

@@ -246,4 +246,26 @@
     });
   }
   initTopNav();
+
+  function initSidePanel() {
+    var profBtns = document.querySelectorAll('.side-panel-prof-btn');
+    var viewProfessions = document.getElementById('view-professions');
+    var viewSellingTips = document.getElementById('view-selling-tips');
+    var topNavBtns = document.querySelectorAll('.top-nav-btn');
+    profBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var profession = btn.getAttribute('data-profession');
+        if (viewSellingTips && !viewSellingTips.hidden) {
+          viewProfessions.hidden = false;
+          viewSellingTips.hidden = true;
+          topNavBtns.forEach(function (b) {
+            b.classList.toggle('active', b.getAttribute('data-view') === 'professions');
+          });
+        }
+        var tab = document.querySelector('.tab-btn[data-profession="' + profession + '"]');
+        if (tab) tab.click();
+      });
+    });
+  }
+  initSidePanel();
 })();
