@@ -1,6 +1,7 @@
 (function () {
   function initServerTime() {
     var el = document.getElementById('server-time');
+    var dateEl = document.getElementById('server-date');
     var sgtEl = document.getElementById('server-time-sgt');
     var resetSgtEl = document.getElementById('raid-reset-sgt');
     if (!el) return;
@@ -8,11 +9,15 @@
     function formatUS(d) {
       return d.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
     }
+    function formatUSDate(d) {
+      return d.toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'short', month: 'short', day: 'numeric' });
+    }
     function formatSGT(d) {
       return d.toLocaleTimeString('en-SG', { timeZone: 'Asia/Singapore', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
     }
     function update() {
       var d = new Date();
+      if (dateEl) dateEl.textContent = formatUSDate(d);
       el.textContent = formatUS(d);
       el.setAttribute('datetime', d.toISOString());
       if (sgtEl) sgtEl.textContent = '(SGT ' + formatSGT(d) + ')';

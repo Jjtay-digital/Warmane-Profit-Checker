@@ -164,6 +164,11 @@ body {
   font-weight: 500;
 }
 
+.server-date {
+  font-weight: 500;
+  color: #a8a6a3;
+}
+
 .server-time {
   font-variant-numeric: tabular-nums;
   font-weight: 600;
