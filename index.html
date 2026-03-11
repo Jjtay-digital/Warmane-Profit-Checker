@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professions profit margin – Warmane Onyxia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="server-version">Warmane Onyxia — 3.3.5a</p>
+    <div class="server-time-bar">
+      <span class="server-time-label">Server time (US):</span>
+      <time id="server-time" class="server-time" datetime="">--:--:--</time>
+      <span id="server-time-sgt" class="server-time-sgt">(SGT --:--:--)</span>
+      <span class="raid-reset">Raid reset: Wednesday 04:00 (US) <span id="raid-reset-sgt" class="raid-reset-sgt">(SGT)</span></span>
+    </div>
+    <h1>Professions profit margin</h1>
+    <p class="subtitle">Warmane – Onyxia</p>
+    <nav class="top-level-nav" aria-label="Main sections">
+      <button type="button" class="top-nav-btn active" data-view="professions">Professions</button>
+      <button type="button" class="top-nav-btn" data-view="selling-tips">Selling Tips</button>
+    </nav>
+  </header>
+
+  <div id="view-professions" class="view-panel">
+  <nav class="profession-tabs" role="tablist" aria-label="Professions">
+    <button type="button" id="tab-engineering" class="tab-btn active" role="tab" aria-selected="true" data-profession="engineering">Engineering</button>
+    <button type="button" id="tab-jewelcrafting" class="tab-btn" role="tab" aria-selected="false" data-profession="jewelcrafting">Jewelcrafting</button>
+    <button type="button" id="tab-enchanting" class="tab-btn" role="tab" aria-selected="false" data-profession="enchanting">Enchanting</button>
+    <button type="button" id="tab-blacksmithing" class="tab-btn" role="tab" aria-selected="false" data-profession="blacksmithing">Blacksmithing</button>
+    <button type="button" id="tab-leatherworking" class="tab-btn" role="tab" aria-selected="false" data-profession="leatherworking">Leatherworking</button>
+  </nav>
+
+  <main class="main-content">
+    <section id="engineering" class="profession-section is-visible" role="tabpanel" aria-labelledby="tab-engineering">
+      <div class="table-wrapper">
+        <table class="profit-table" aria-label="Engineering items profit margin">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Materials needed</th>
+              <th>Selling price</th>
+              <th>Profit margin</th>
+            </tr>
+          </thead>
+          <tbody id="engineering-tbody">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="jewelcrafting" class="profession-section" role="tabpanel" aria-labelledby="tab-jewelcrafting" hidden>
+      <div class="table-wrapper">
+        <table class="profit-table" aria-label="Jewelcrafting items profit margin">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Materials needed</th>
+              <th>Selling price</th>
+              <th>Profit margin</th>
+            </tr>
+          </thead>
+          <tbody id="jewelcrafting-tbody">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="enchanting" class="profession-section" role="tabpanel" aria-labelledby="tab-enchanting" hidden>
+      <div class="table-wrapper">
+        <table class="profit-table" aria-label="Enchanting items profit margin">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Materials needed</th>
+              <th>Selling price</th>
+              <th>Profit margin</th>
+            </tr>
+          </thead>
+          <tbody id="enchanting-tbody">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="blacksmithing" class="profession-section" role="tabpanel" aria-labelledby="tab-blacksmithing" hidden>
+      <div class="table-wrapper">
+        <table class="profit-table" aria-label="Blacksmithing items profit margin">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Materials needed</th>
+              <th>Selling price</th>
+              <th>Profit margin</th>
+            </tr>
+          </thead>
+          <tbody id="blacksmithing-tbody">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="leatherworking" class="profession-section" role="tabpanel" aria-labelledby="tab-leatherworking" hidden>
+      <div class="table-wrapper">
+        <table class="profit-table" aria-label="Leatherworking items profit margin">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Materials needed</th>
+              <th>Selling price</th>
+              <th>Profit margin</th>
+            </tr>
+          </thead>
+          <tbody id="leatherworking-tbody">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <div id="view-selling-tips" class="view-panel" hidden>
+    <main class="tips-content">
+      <h2 class="tips-page-title">Selling Tips</h2>
+
+      <article class="tip-card">
+        <h3 class="tip-title">1. The "Raid Reset" Gold Mine (Wednesday/Thursday)</h3>
+        <p class="tip-intro">This is the most important rule for a Jewelcrafter.</p>
+        <p><strong>The Logic:</strong> This is when raid lockouts reset. Players go into Naxxramas, get new gear drops, and immediately need to socket them with gems.</p>
+        <p><strong>The Strategy:</strong> Have 20–50 of the most popular cuts (Runed Scarlet Ruby, Solid Sky Sapphire, etc.) ready to post on Wednesday evening.</p>
+        <p><strong>Pricing:</strong> You can usually list gems for 10–20% higher than the weekend price, and they will still sell instantly.</p>
+      </article>
+
+      <article class="tip-card">
+        <h3 class="tip-title">2. The "Pre-Raid" Rush (Daily 6:00 PM – 8:00 PM)</h3>
+        <p class="tip-intro">This is the peak time for Engineers selling consumables.</p>
+        <p><strong>The Logic:</strong> Raiders are logging in, checking their bags, and realizing they are out of Global Thermal Sapper Charges or Mana Injectors.</p>
+        <p><strong>The Strategy:</strong> Post your Sappers, Bombs, and Repair Bots (Scrapbots) in stacks of 10 or 20 during this window.</p>
+        <p><strong>The Tip:</strong> Avoid posting these at 2:00 AM; the "undercutters" will bury your listing by the time the evening raiders log on.</p>
+      </article>
+
+      <article class="tip-card">
+        <h3 class="tip-title">3. The "Sunday Night" Material Dump</h3>
+        <p><strong>The Logic:</strong> Weekend "casual" players have spent Saturday and Sunday farming Saronite and Titanium. By Sunday night, the Auction House is flooded with raw materials, causing prices to bottom out.</p>
+        <p><strong>The Strategy:</strong></p>
+        <ul>
+          <li>Buy your raw Saronite Ore and Eternals on Sunday night when they are cheapest.</li>
+          <li>Sell your finished jewelry or cut gems on Tuesday/Wednesday.</li>
+          <li>Never sell raw mats on a Sunday; you are competing with too many farmers.</li>
+        </ul>
+      </article>
+
+      <article class="tip-card">
+        <h3 class="tip-title">4. The "Daily Quest" Window (JC Specific)</h3>
+        <p><strong>The Logic:</strong> Every day, the Jewelcrafting daily quest requires a specific "green" quality gem (e.g., Bloodstone, Sun Crystal).</p>
+        <p><strong>The Strategy:</strong> Check which gem is required for the daily quest in Dalaran. If the quest is "Shipment: Bloodstone Band," the price of Bloodstones will triple for that day only. Sell your stockpile of that specific color immediately.</p>
+      </article>
+
+      <article class="tip-card">
+        <h3 class="tip-title">5. Phase Transition Timing (The "Ulduar" Prep)</h3>
+        <p class="tip-intro">Since Onyxia is in Phase 1 (Naxxramas), you need to look ahead to Phase 2 (Ulduar).</p>
+        <p><strong>When to Sell Titansteel:</strong> Sell your Titansteel weapons (Destroyers) now. Once Phase 2/Ulduar launches, these items will be replaced by better raid drops, and their value will crash.</p>
+        <p><strong>When to Hold:</strong> Start hoarding Titanium Ore and Eternal Fires about 3–4 weeks before Phase 2 is announced. When Ulduar drops, new powerful Engineering goggles and JC recipes will be released, and the price of these mats will skyrocket.</p>
+      </article>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

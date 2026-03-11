@@ -1,0 +1,200 @@
+{
+  "Engineering": [
+    {
+      "item": "Mechano-Hog / Mekgineer's Chopper",
+      "wowheadItemId": 41508,
+      "materials": [
+        { "label": "12x Titansteel Bar", "price": 0 },
+        { "label": "40x Cobalt Bolt", "price": 0 },
+        { "label": "2x Arctic Fur", "price": 0 },
+        { "label": "1x Salvaged Iron Golem Parts", "price": 0 },
+        { "label": "1x Goblin-machined Piston", "price": 0 },
+        { "label": "1x Elementium-plated Exhaust Pipe", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titansteel Destroyer / Bonecrusher",
+      "wowheadItemId": 41257,
+      "materials": [
+        { "label": "8x Saronite Bar", "price": 0 },
+        { "label": "8x Titansteel Bar", "price": 0 },
+        { "label": "2x Frozen Orb", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Global Thermal Sapper Charge",
+      "wowheadItemId": 42641,
+      "materials": [
+        { "label": "1x Saronite Bar", "price": 0 },
+        { "label": "1x Volatile Blasting Trigger", "price": 0 },
+        { "label": "1x Cobalt Bar", "price": 0 },
+        { "label": "1x Crystallized Water", "price": 0 }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Jewelcrafting": [
+    {
+      "item": "Runed Scarlet Ruby",
+      "wowheadItemId": 39998,
+      "materials": [
+        { "label": "1x Scarlet Ruby", "price": 0 },
+        { "label": "1x Eternal Shadow", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bright Scarlet Ruby",
+      "wowheadItemId": 39999,
+      "materials": [
+        { "label": "1x Scarlet Ruby", "price": 0 },
+        { "label": "1x Eternal Fire", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Solid Sky Sapphire",
+      "wowheadItemId": 40008,
+      "materials": [
+        { "label": "1x Sky Sapphire", "price": 0 },
+        { "label": "1x Eternal Earth", "price": 0 }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Enchanting": [
+    {
+      "item": "Scroll of Enchant Staff - Greater Spellpower",
+      "wowheadItemId": 45056,
+      "materials": [
+        { "label": "1x Abyss Crystal", "price": 0 },
+        { "label": "8x Greater Cosmic Essence", "price": 0 },
+        { "label": "1x Runed Titanium Rod", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Weapon - Major Spellpower",
+      "wowheadItemId": 38921,
+      "materials": [
+        { "label": "8x Large Prismatic Shard", "price": 0 },
+        { "label": "8x Greater Planar Essence", "price": 0 },
+        { "label": "1x Runed Titanium Rod", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Bracers - Major Stamina",
+      "wowheadItemId": 44947,
+      "materials": [
+        { "label": "4x Greater Cosmic Essence", "price": 0 },
+        { "label": "1x Abyss Crystal", "price": 0 },
+        { "label": "1x Runed Titanium Rod", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Bracers - Greater Assault",
+      "wowheadItemId": 44815,
+      "materials": [
+        { "label": "6x Infinite Dust", "price": 0 },
+        { "label": "2x Greater Cosmic Essence", "price": 0 },
+        { "label": "1x Runed Titanium Rod", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Shield - Greater Stamina",
+      "wowheadItemId": 38861,
+      "materials": [
+        { "label": "8x Greater Cosmic Essence", "price": 0 },
+        { "label": "1x Runed Titanium Rod", "price": 0 }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Blacksmithing": [
+    {
+      "item": "Eternal Belt Buckle",
+      "wowheadItemId": 41611,
+      "materials": [
+        { "label": "4x Saronite Bar", "price": 0 },
+        { "label": "1x Eternal Earth", "price": 0 },
+        { "label": "1x Eternal Shadow", "price": 0 },
+        { "label": "1x Eternal Water", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Weapon Chain",
+      "wowheadItemId": 41976,
+      "materials": [
+        { "label": "8x Saronite Bar", "price": 0 },
+        { "label": "1x Titanium Bar", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Plating",
+      "wowheadItemId": 44936,
+      "materials": [
+        { "label": "4x Saronite Bar", "price": 0 },
+        { "label": "1x Titanium Bar", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Spiked Titansteel Helm",
+      "wowheadItemId": 41386,
+      "materials": [
+        { "label": "8x Saronite Bar", "price": 0 },
+        { "label": "6x Titansteel Bar", "price": 0 },
+        { "label": "2x Frozen Orb", "price": 0 }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Leatherworking": [
+    {
+      "item": "Icescale Leg Armor",
+      "wowheadItemId": 38374,
+      "materials": [
+        { "label": "2x Arctic Fur", "price": 0 },
+        { "label": "2x Icy Dragonscale", "price": 0 },
+        { "label": "1x Frozen Orb", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frosthide Leg Armor",
+      "wowheadItemId": 38373,
+      "materials": [
+        { "label": "4x Arctic Fur", "price": 0 },
+        { "label": "1x Frozen Orb", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Drums of Forgotten Kings",
+      "wowheadItemId": 49633,
+      "materials": [
+        { "label": "8x Heavy Borean Leather", "price": 0 },
+        { "label": "2x Icy Dragonscale", "price": 0 },
+        { "label": "2x Eternal Life", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Drums of the Wild",
+      "wowheadItemId": 49634,
+      "materials": [
+        { "label": "6x Heavy Borean Leather", "price": 0 },
+        { "label": "2x Icy Dragonscale", "price": 0 },
+        { "label": "1x Eternal Life", "price": 0 }
+      ],
+      "sellingPrice": 0
+    }
+  ]
+}
