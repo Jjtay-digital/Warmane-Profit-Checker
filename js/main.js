@@ -42,7 +42,8 @@
     Jewelcrafting: 'jewelcrafting-tbody',
     Enchanting: 'enchanting-tbody',
     Blacksmithing: 'blacksmithing-tbody',
-    Leatherworking: 'leatherworking-tbody'
+    Leatherworking: 'leatherworking-tbody',
+    Tailoring: 'tailoring-tbody'
   };
 
   function formatGold(value) {
@@ -173,6 +174,11 @@
       { item: "Frosthide Leg Armor", wowheadItemId: 38373, materials: [ { label: "4x Arctic Fur", price: 0 }, { label: "1x Frozen Orb", price: 0 } ], sellingPrice: 0 },
       { item: "Drums of Forgotten Kings", wowheadItemId: 49633, materials: [ { label: "8x Heavy Borean Leather", price: 0 }, { label: "2x Icy Dragonscale", price: 0 }, { label: "2x Eternal Life", price: 0 } ], sellingPrice: 0 },
       { item: "Drums of the Wild", wowheadItemId: 49634, materials: [ { label: "6x Heavy Borean Leather", price: 0 }, { label: "2x Icy Dragonscale", price: 0 }, { label: "1x Eternal Life", price: 0 } ], sellingPrice: 0 }
+    ],
+    Tailoring: [
+      { item: "Frostweave Bag", wowheadItemId: 41599, materials: [ { label: "6x Frostweave Cloth", price: 0 }, { label: "1x Infinite Dust", price: 0 } ], sellingPrice: 0 },
+      { item: "Brilliant Spellthread", wowheadItemId: 41602, materials: [ { label: "4x Eternal Life", price: 0 }, { label: "4x Iceweb Spider Silk", price: 0 }, { label: "1x Frozen Orb", price: 0 } ], sellingPrice: 0 },
+      { item: "Sapphire Spellthread", wowheadItemId: 41604, materials: [ { label: "4x Eternal Fire", price: 0 }, { label: "4x Iceweb Spider Silk", price: 0 }, { label: "1x Frozen Orb", price: 0 } ], sellingPrice: 0 }
     ]
   };
 

@@ -66,39 +66,24 @@ body {
   opacity: 0.5;
 }
 
-.side-panel-section {
-  margin-bottom: 1.25rem;
-}
-
-.side-panel-section:last-child {
-  margin-bottom: 0;
-}
-
-.side-panel-label {
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #d4af37;
-  margin-bottom: 0.5rem;
-}
-
-.side-panel-professions,
-.side-panel-ign-list {
+.side-panel-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.side-panel-professions li,
-.side-panel-ign-list li {
-  margin-bottom: 0.25rem;
+.side-panel-item {
+  margin-bottom: 0.75rem;
+}
+
+.side-panel-item:last-child {
+  margin-bottom: 0;
 }
 
 .side-panel-prof-btn {
   display: block;
   width: 100%;
-  padding: 0.35rem 0;
+  padding: 0.25rem 0 0.1rem;
   font-size: 0.85rem;
   text-align: left;
   color: #e8e6e3;
@@ -113,26 +98,11 @@ body {
   background: #2d2b28;
 }
 
-.side-panel-ign-list {
-  font-size: 0.8rem;
-  color: #a8a6a3;
-}
-
-.side-panel-ign-list .ign-prof {
-  display: block;
-  color: #8a8885;
+.side-panel-crafter {
   font-size: 0.75rem;
-}
-
-.side-panel-ign-list .ign-name {
-  color: #e8e6e3;
-}
-
-.side-panel-ign-list li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0 0.35rem;
+  color: #a8a6a3;
+  padding-left: 0.25rem;
+  margin-top: 0.1rem;
 }
 
 .site-header {

@@ -10,27 +10,33 @@
   <aside class="side-panel" id="side-panel" aria-label="Professions and crafters">
     <div class="side-panel-inner">
       <div class="side-panel-content">
-        <div class="side-panel-section">
-          <div class="side-panel-label">Professions</div>
-          <ul class="side-panel-professions" role="list">
-            <li><button type="button" class="side-panel-prof-btn" data-profession="engineering">Engineering</button></li>
-            <li><button type="button" class="side-panel-prof-btn" data-profession="jewelcrafting">Jewelcrafting</button></li>
-            <li><button type="button" class="side-panel-prof-btn" data-profession="enchanting">Enchanting</button></li>
-            <li><button type="button" class="side-panel-prof-btn" data-profession="blacksmithing">Blacksmithing</button></li>
-            <li><button type="button" class="side-panel-prof-btn" data-profession="leatherworking">Leatherworking</button></li>
-          </ul>
-        </div>
-        <div class="side-panel-section side-panel-igns">
-          <div class="side-panel-label">Crafters</div>
-          <ul class="side-panel-ign-list" role="list">
-            <li><span class="ign-prof">Blacksmithing</span> <span class="ign-name">Arats</span></li>
-            <li><span class="ign-prof">Jewelcrafting</span> <span class="ign-name">Mtjin</span></li>
-            <li><span class="ign-prof">Engineering</span> <span class="ign-name">Mtjin</span></li>
-            <li><span class="ign-prof">Enchanting</span> <span class="ign-name">Lynpeh</span></li>
-            <li><span class="ign-prof">Enchanting</span> <span class="ign-name">Mini</span></li>
-            <li><span class="ign-prof">Leatherworking</span> <span class="ign-name">—</span></li>
-          </ul>
-        </div>
+        <ul class="side-panel-list" role="list">
+          <li class="side-panel-item">
+            <button type="button" class="side-panel-prof-btn" data-profession="engineering">Engineering</button>
+            <div class="side-panel-crafter">Mtjin</div>
+          </li>
+          <li class="side-panel-item">
+            <button type="button" class="side-panel-prof-btn" data-profession="jewelcrafting">Jewelcrafting</button>
+            <div class="side-panel-crafter">Mtjin</div>
+          </li>
+          <li class="side-panel-item">
+            <button type="button" class="side-panel-prof-btn" data-profession="enchanting">Enchanting</button>
+            <div class="side-panel-crafter">Lynpeh</div>
+            <div class="side-panel-crafter">Mini</div>
+          </li>
+          <li class="side-panel-item">
+            <button type="button" class="side-panel-prof-btn" data-profession="blacksmithing">Blacksmithing</button>
+            <div class="side-panel-crafter">Arats</div>
+          </li>
+          <li class="side-panel-item">
+            <button type="button" class="side-panel-prof-btn" data-profession="leatherworking">Leatherworking</button>
+            <div class="side-panel-crafter">—</div>
+          </li>
+          <li class="side-panel-item">
+            <button type="button" class="side-panel-prof-btn" data-profession="tailoring">Tailoring</button>
+            <div class="side-panel-crafter">Mini</div>
+          </li>
+        </ul>
       </div>
       <div class="side-panel-tab" aria-hidden="true">◀</div>
     </div>
@@ -59,6 +65,7 @@
     <button type="button" id="tab-enchanting" class="tab-btn" role="tab" aria-selected="false" data-profession="enchanting">Enchanting</button>
     <button type="button" id="tab-blacksmithing" class="tab-btn" role="tab" aria-selected="false" data-profession="blacksmithing">Blacksmithing</button>
     <button type="button" id="tab-leatherworking" class="tab-btn" role="tab" aria-selected="false" data-profession="leatherworking">Leatherworking</button>
+    <button type="button" id="tab-tailoring" class="tab-btn" role="tab" aria-selected="false" data-profession="tailoring">Tailoring</button>
   </nav>
 
   <main class="main-content">
@@ -146,6 +153,24 @@
             </tr>
           </thead>
           <tbody id="leatherworking-tbody">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tailoring" class="profession-section" role="tabpanel" aria-labelledby="tab-tailoring" hidden>
+      <div class="table-wrapper">
+        <table class="profit-table" aria-label="Tailoring items profit margin">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Materials needed</th>
+              <th>Selling price</th>
+              <th>Profit margin</th>
+            </tr>
+          </thead>
+          <tbody id="tailoring-tbody">
             <!-- Filled by JS -->
           </tbody>
         </table>
