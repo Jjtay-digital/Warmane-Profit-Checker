@@ -44,7 +44,8 @@
     Blacksmithing: 'blacksmithing-tbody',
     Leatherworking: 'leatherworking-tbody',
     Tailoring: 'tailoring-tbody',
-    Alchemy: 'alchemy-tbody'
+    Alchemy: 'alchemy-tbody',
+    Inscription: 'inscription-tbody'
   };
 
   function formatGold(value) {
@@ -185,6 +186,11 @@
       { item: "Flask of the Frost Wyrm", wowheadItemId: 46376, materials: [ { label: "1x Frost Lotus", price: 0 }, { label: "7x Ice Thorn", price: 0 }, { label: "1x Crystal Vial", price: 0 } ], sellingPrice: 0 },
       { item: "Flask of Endless Rage", wowheadItemId: 46377, materials: [ { label: "1x Frost Lotus", price: 0 }, { label: "7x Lichbloom", price: 0 }, { label: "1x Crystal Vial", price: 0 } ], sellingPrice: 0 },
       { item: "Potion of Speed", wowheadItemId: 40211, materials: [ { label: "1x Imbued Vial", price: 0 }, { label: "2x Adder's Tongue", price: 0 }, { label: "1x Pygmy Oil", price: 0 } ], sellingPrice: 0 }
+    ],
+    Inscription: [
+      { item: "Glyph of Death Coil", wowheadItemId: 42457, materials: [ { label: "1x Ink of the Sea", price: 0 }, { label: "1x Snowfall Ink", price: 0 }, { label: "1x Light Parchment", price: 0 } ], sellingPrice: 0 },
+      { item: "Glyph of Psychic Scream", wowheadItemId: 42410, materials: [ { label: "1x Ink of the Sea", price: 0 }, { label: "1x Snowfall Ink", price: 0 }, { label: "1x Light Parchment", price: 0 } ], sellingPrice: 0 },
+      { item: "Glyph of Execution", wowheadItemId: 43416, materials: [ { label: "1x Ink of the Sea", price: 0 }, { label: "1x Snowfall Ink", price: 0 }, { label: "1x Light Parchment", price: 0 } ], sellingPrice: 0 }
     ]
   };
 

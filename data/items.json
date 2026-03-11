@@ -259,5 +259,37 @@
       ],
       "sellingPrice": 0
     }
+  ],
+  "Inscription": [
+    {
+      "item": "Glyph of Death Coil",
+      "wowheadItemId": 42457,
+      "materials": [
+        { "label": "1x Ink of the Sea", "price": 0 },
+        { "label": "1x Snowfall Ink", "price": 0 },
+        { "label": "1x Light Parchment", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Psychic Scream",
+      "wowheadItemId": 42410,
+      "materials": [
+        { "label": "1x Ink of the Sea", "price": 0 },
+        { "label": "1x Snowfall Ink", "price": 0 },
+        { "label": "1x Light Parchment", "price": 0 }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Execution",
+      "wowheadItemId": 43416,
+      "materials": [
+        { "label": "1x Ink of the Sea", "price": 0 },
+        { "label": "1x Snowfall Ink", "price": 0 },
+        { "label": "1x Light Parchment", "price": 0 }
+      ],
+      "sellingPrice": 0
+    }
   ]
 }
