@@ -238,6 +238,7 @@ body {
   max-width: 560px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .crafter-form-title {
@@ -247,8 +248,13 @@ body {
   color: #d4af37;
 }
 
+.crafter-form {
+  display: inline-block;
+  text-align: left;
+}
+
 .crafter-form-table {
-  width: 100%;
+  margin: 0 auto;
   border-collapse: collapse;
   font-size: 0.85rem;
 }
@@ -276,6 +282,7 @@ body {
 .crafter-form-actions {
   padding-top: 0.5rem !important;
   border-top: 1px solid #3d3b37;
+  text-align: center;
 }
 
 .crafter-form label,
