@@ -550,7 +550,7 @@
     names[slot - 1] = name;
     saveTemplateNames(names);
     refreshTemplateSlotOptions();
-    syncRenameInputFromSaveSlot();
+    inputEl.value = name;
   }
 
   function initPriceTemplate() {
@@ -559,11 +559,11 @@
     var saveBtn = document.getElementById('price-template-save');
     var loadBtn = document.getElementById('price-template-load');
     var saveSlot = document.getElementById('price-template-save-slot');
-    var renameBtn = document.getElementById('price-template-rename');
+    var slotNameInput = document.getElementById('price-template-slot-name');
     if (saveBtn) saveBtn.addEventListener('click', savePriceTemplate);
     if (loadBtn) loadBtn.addEventListener('click', loadPriceTemplate);
     if (saveSlot) saveSlot.addEventListener('change', syncRenameInputFromSaveSlot);
-    if (renameBtn) renameBtn.addEventListener('click', renamePriceTemplateSlot);
+    if (slotNameInput) slotNameInput.addEventListener('blur', renamePriceTemplateSlot);
   }
   initPriceTemplate();
 
