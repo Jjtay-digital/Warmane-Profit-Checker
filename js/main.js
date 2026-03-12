@@ -618,32 +618,35 @@
         });
       });
     }
-    if (template.prospecting) {
-      var t = template.prospecting.titanium;
-      if (t) {
-        var s = document.getElementById('prospecting-stack'); if (s) s.value = t.stack;
-        var e = document.getElementById('prospecting-dragonseye'); if (e) e.value = t.dragonseye;
-        var ep = document.getElementById('prospecting-epic'); if (ep) ep.value = t.epic;
-        var r = document.getElementById('prospecting-rare'); if (r) r.value = t.rare;
-        if (s) s.dispatchEvent(new Event('input', { bubbles: true }));
-      }
-      var saron = template.prospecting.saronite;
-      if (saron) {
-        var ss = document.getElementById('saronite-stack'); if (ss) ss.value = saron.stack;
-        var rareIds = ['saronite-rare-scarlet', 'saronite-rare-sky', 'saronite-rare-autumn', 'saronite-rare-monarch', 'saronite-rare-twilight', 'saronite-rare-forest'];
-        var rareVals = [saron.rareScarlet, saron.rareSky, saron.rareAutumn, saron.rareMonarch, saron.rareTwilight, saron.rareForest];
-        rareIds.forEach(function (id, i) { var el = document.getElementById(id); if (el) el.value = rareVals[i] != null ? rareVals[i] : 0; });
-        var du = document.getElementById('saronite-dust'); if (du) du.value = saron.dust != null ? saron.dust : 0;
-        var es = document.getElementById('saronite-essence'); if (es) es.value = saron.essence != null ? saron.essence : 0;
-        var un = document.getElementById('saronite-uncommon-price'); if (un) un.value = saron.uncommonPrice != null ? saron.uncommonPrice : 0;
-        var cr = document.getElementById('saronite-craft-cost'); if (cr) cr.value = saron.craftCost != null ? saron.craftCost : 0;
-        var mode = saron.mode === 'raw' ? 'raw' : 'shuffle';
-        var radio = document.querySelector('input[name="saronite-uncommon-mode"][value="' + mode + '"]');
-        if (radio) radio.checked = true;
-      }
-      var firstSaronite = document.getElementById('saronite-stack');
-      if (firstSaronite) firstSaronite.dispatchEvent(new Event('input', { bubbles: true }));
+    if (template.prospecting) applyProspectingToPage(template.prospecting);
+  }
+
+  function applyProspectingToPage(prospecting) {
+    if (!prospecting) return;
+    var t = prospecting.titanium;
+    if (t) {
+      var s = document.getElementById('prospecting-stack'); if (s) s.value = t.stack;
+      var e = document.getElementById('prospecting-dragonseye'); if (e) e.value = t.dragonseye;
+      var ep = document.getElementById('prospecting-epic'); if (ep) ep.value = t.epic;
+      var r = document.getElementById('prospecting-rare'); if (r) r.value = t.rare;
+      if (s) s.dispatchEvent(new Event('input', { bubbles: true }));
     }
+    var saron = prospecting.saronite;
+    if (saron) {
+      var ss = document.getElementById('saronite-stack'); if (ss) ss.value = saron.stack;
+      var rareIds = ['saronite-rare-scarlet', 'saronite-rare-sky', 'saronite-rare-autumn', 'saronite-rare-monarch', 'saronite-rare-twilight', 'saronite-rare-forest'];
+      var rareVals = [saron.rareScarlet, saron.rareSky, saron.rareAutumn, saron.rareMonarch, saron.rareTwilight, saron.rareForest];
+      rareIds.forEach(function (id, i) { var el = document.getElementById(id); if (el) el.value = rareVals[i] != null ? rareVals[i] : 0; });
+      var du = document.getElementById('saronite-dust'); if (du) du.value = saron.dust != null ? saron.dust : 0;
+      var es = document.getElementById('saronite-essence'); if (es) es.value = saron.essence != null ? saron.essence : 0;
+      var un = document.getElementById('saronite-uncommon-price'); if (un) un.value = saron.uncommonPrice != null ? saron.uncommonPrice : 0;
+      var cr = document.getElementById('saronite-craft-cost'); if (cr) cr.value = saron.craftCost != null ? saron.craftCost : 0;
+      var mode = saron.mode === 'raw' ? 'raw' : 'shuffle';
+      var radio = document.querySelector('input[name="saronite-uncommon-mode"][value="' + mode + '"]');
+      if (radio) radio.checked = true;
+    }
+    var firstSaronite = document.getElementById('saronite-stack');
+    if (firstSaronite) firstSaronite.dispatchEvent(new Event('input', { bubbles: true }));
   }
 
   function renamePriceTemplateSlot() {
@@ -672,6 +675,151 @@
     if (slotNameInput) slotNameInput.addEventListener('blur', renamePriceTemplateSlot);
   }
   initPriceTemplate();
+
+  var PROSPECTING_TEMPLATES_KEY = 'warmane-calculator-prospecting-templates';
+  var PROSPECTING_TEMPLATE_NAMES_KEY = 'warmane-calculator-prospecting-template-names';
+
+  function getProspectingTemplatesArray() {
+    try {
+      var raw = localStorage.getItem(PROSPECTING_TEMPLATES_KEY);
+      if (!raw) return new Array(TEMPLATE_SLOTS);
+      var arr = JSON.parse(raw);
+      return Array.isArray(arr) ? arr : new Array(TEMPLATE_SLOTS);
+    } catch (e) { return new Array(TEMPLATE_SLOTS); }
+  }
+
+  function getProspectingTemplateNames() {
+    try {
+      var raw = localStorage.getItem(PROSPECTING_TEMPLATE_NAMES_KEY);
+      if (!raw) return defaultProspectingSlotNames();
+      var arr = JSON.parse(raw);
+      if (!Array.isArray(arr) || arr.length !== TEMPLATE_SLOTS) return defaultProspectingSlotNames();
+      return arr.slice(0, TEMPLATE_SLOTS).map(function (s, i) { return (s && String(s).trim()) || ('Slot ' + (i + 1)); });
+    } catch (e) { return defaultProspectingSlotNames(); }
+  }
+
+  function defaultProspectingSlotNames() {
+    var out = [];
+    for (var i = 1; i <= TEMPLATE_SLOTS; i++) out.push('Slot ' + i);
+    return out;
+  }
+
+  function saveProspectingTemplateNames(names) {
+    try {
+      var arr = names.slice(0, TEMPLATE_SLOTS);
+      while (arr.length < TEMPLATE_SLOTS) arr.push('Slot ' + (arr.length + 1));
+      localStorage.setItem(PROSPECTING_TEMPLATE_NAMES_KEY, JSON.stringify(arr));
+    } catch (e) {}
+  }
+
+  function refreshProspectingTemplateSlotOptions() {
+    var names = getProspectingTemplateNames();
+    var saveSelect = document.getElementById('prospecting-template-save-slot');
+    var loadSelect = document.getElementById('prospecting-template-load-slot');
+    function fill(sel) {
+      if (!sel) return;
+      sel.innerHTML = '';
+      for (var i = 0; i < TEMPLATE_SLOTS; i++) {
+        var opt = document.createElement('option');
+        opt.value = String(i + 1);
+        opt.textContent = names[i] || ('Slot ' + (i + 1));
+        sel.appendChild(opt);
+      }
+    }
+    fill(saveSelect);
+    fill(loadSelect);
+  }
+
+  function syncProspectingRenameInputFromSaveSlot() {
+    var slotEl = document.getElementById('prospecting-template-save-slot');
+    var inputEl = document.getElementById('prospecting-template-slot-name');
+    if (!slotEl || !inputEl) return;
+    var slot = Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1));
+    var names = getProspectingTemplateNames();
+    inputEl.value = names[slot - 1] || ('Slot ' + slot);
+  }
+
+  function buildProspectingTemplateFromPage() {
+    var stackInp = document.getElementById('prospecting-stack');
+    var eyeInp = document.getElementById('prospecting-dragonseye');
+    var epicInp = document.getElementById('prospecting-epic');
+    var rareInp = document.getElementById('prospecting-rare');
+    var titanium = {
+      stack: stackInp ? parseNum(stackInp.value) : 0,
+      dragonseye: eyeInp ? parseNum(eyeInp.value) : 0,
+      epic: epicInp ? parseNum(epicInp.value) : 0,
+      rare: rareInp ? parseNum(rareInp.value) : 0
+    };
+    var saroniteStack = document.getElementById('saronite-stack');
+    var rareIds = ['saronite-rare-scarlet', 'saronite-rare-sky', 'saronite-rare-autumn', 'saronite-rare-monarch', 'saronite-rare-twilight', 'saronite-rare-forest'];
+    var dustInp = document.getElementById('saronite-dust');
+    var essenceInp = document.getElementById('saronite-essence');
+    var uncommonInp = document.getElementById('saronite-uncommon-price');
+    var craftInp = document.getElementById('saronite-craft-cost');
+    var modeRaw = document.querySelector('input[name="saronite-uncommon-mode"][value="raw"]');
+    var saronite = {
+      stack: saroniteStack ? parseNum(saroniteStack.value) : 0,
+      rareScarlet: parseNum(document.getElementById(rareIds[0]) && document.getElementById(rareIds[0]).value),
+      rareSky: parseNum(document.getElementById(rareIds[1]) && document.getElementById(rareIds[1]).value),
+      rareAutumn: parseNum(document.getElementById(rareIds[2]) && document.getElementById(rareIds[2]).value),
+      rareMonarch: parseNum(document.getElementById(rareIds[3]) && document.getElementById(rareIds[3]).value),
+      rareTwilight: parseNum(document.getElementById(rareIds[4]) && document.getElementById(rareIds[4]).value),
+      rareForest: parseNum(document.getElementById(rareIds[5]) && document.getElementById(rareIds[5]).value),
+      dust: dustInp ? parseNum(dustInp.value) : 0,
+      essence: essenceInp ? parseNum(essenceInp.value) : 0,
+      uncommonPrice: uncommonInp ? parseNum(uncommonInp.value) : 0,
+      craftCost: craftInp ? parseNum(craftInp.value) : 0,
+      mode: modeRaw && modeRaw.checked ? 'raw' : 'shuffle'
+    };
+    return { titanium: titanium, saronite: saronite };
+  }
+
+  function saveProspectingTemplate() {
+    var slotEl = document.getElementById('prospecting-template-save-slot');
+    var slot = slotEl ? Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1)) : 1;
+    var arr = getProspectingTemplatesArray();
+    while (arr.length < TEMPLATE_SLOTS) arr.push(null);
+    arr[slot - 1] = buildProspectingTemplateFromPage();
+    try {
+      localStorage.setItem(PROSPECTING_TEMPLATES_KEY, JSON.stringify(arr));
+    } catch (e) {}
+  }
+
+  function loadProspectingTemplate() {
+    var slotEl = document.getElementById('prospecting-template-load-slot');
+    var slot = slotEl ? Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1)) : 1;
+    var arr = getProspectingTemplatesArray();
+    var template = arr[slot - 1];
+    if (!template) return;
+    applyProspectingToPage(template);
+  }
+
+  function renameProspectingTemplateSlot() {
+    var slotEl = document.getElementById('prospecting-template-save-slot');
+    var inputEl = document.getElementById('prospecting-template-slot-name');
+    if (!slotEl || !inputEl) return;
+    var slot = Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1));
+    var name = (inputEl.value && inputEl.value.trim()) || ('Slot ' + slot);
+    var names = getProspectingTemplateNames();
+    names[slot - 1] = name;
+    saveProspectingTemplateNames(names);
+    refreshProspectingTemplateSlotOptions();
+    inputEl.value = name;
+  }
+
+  function initProspectingTemplate() {
+    refreshProspectingTemplateSlotOptions();
+    syncProspectingRenameInputFromSaveSlot();
+    var saveBtn = document.getElementById('prospecting-template-save');
+    var loadBtn = document.getElementById('prospecting-template-load');
+    var saveSlot = document.getElementById('prospecting-template-save-slot');
+    var slotNameInput = document.getElementById('prospecting-template-slot-name');
+    if (saveBtn) saveBtn.addEventListener('click', saveProspectingTemplate);
+    if (loadBtn) loadBtn.addEventListener('click', loadProspectingTemplate);
+    if (saveSlot) saveSlot.addEventListener('change', syncProspectingRenameInputFromSaveSlot);
+    if (slotNameInput) slotNameInput.addEventListener('blur', renameProspectingTemplateSlot);
+  }
+  initProspectingTemplate();
 
   function initScrollToTop() {
     var btn = document.getElementById('scroll-to-top');

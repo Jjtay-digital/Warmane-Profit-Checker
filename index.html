@@ -269,6 +269,17 @@
   </div>
 
   <div id="view-prospecting" class="view-panel" hidden>
+    <div class="price-template-bar prospecting-template-bar">
+      <div class="price-template-group">
+        <button type="button" id="prospecting-template-save" class="price-template-btn">Save template</button>
+        <select id="prospecting-template-save-slot" class="price-template-select" aria-label="Save to slot"></select>
+        <input type="text" id="prospecting-template-slot-name" class="price-template-slot-name-overwrite" maxlength="32" placeholder="Slot 1" aria-label="Rename slot (overwrite name)">
+      </div>
+      <div class="price-template-group">
+        <button type="button" id="prospecting-template-load" class="price-template-btn">Load template</button>
+        <select id="prospecting-template-load-slot" class="price-template-select" aria-label="Load from slot"></select>
+      </div>
+    </div>
     <main class="prospecting-content max-w-2xl mx-auto px-4 py-6">
       <h2 class="text-xl font-semibold text-amber-500 mb-4">Titanium Ore Prospecting Profitability</h2>
       <p class="text-sm text-gray-400 mb-6">WotLK yields per 5 ore: 25% epic, 100% rare (avg 1), 0.75 titanium powder, 1.5 uncommon (vendor 1g).</p>
