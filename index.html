@@ -20,28 +20,30 @@
   </aside>
 
   <header class="site-header">
-    <p class="server-version">Warmane Onyxia — 3.3.5a (client)</p>
-    <div class="realm-status" id="realm-status">
-      <span class="realm-status-phase">WotLK Phase 1</span>
-      <span class="realm-status-sep">·</span>
-      <span>Tier 7: Naxxramas, Eye of Eternity, Obsidian Sanctum</span>
-      <span class="realm-status-sep">·</span>
-      <span>Level 80</span>
-      <span class="realm-status-sep">·</span>
-      <span>PvP Season 5</span>
-      <span class="realm-status-sep">·</span>
-      <span class="realm-status-next">Next: Phase 2 (Ulduar) ~June/July 2026</span>
+    <div class="header-row">
+      <div class="header-box header-box-left">
+        <table class="header-info-table" aria-label="Server time and raid reset">
+          <tr><th scope="row">Server time (US)</th></tr>
+          <tr><td id="server-date" class="server-date">—</td></tr>
+          <tr><td><time id="server-time" class="server-time" datetime="">--:--:--</time></td></tr>
+          <tr><td id="server-time-sgt" class="server-time-sgt">(SGT --:--:--)</td></tr>
+          <tr><td class="raid-reset">Raid reset: Wednesday 04:00 (US) <span id="raid-reset-sgt" class="raid-reset-sgt">(SGT)</span></td></tr>
+        </table>
+      </div>
+      <div class="header-title-block">
+        <h1>Professions Profit Calculator</h1>
+        <p class="subtitle">Warmane – Onyxia</p>
+      </div>
+      <div class="header-box header-box-right" id="realm-status">
+        <table class="header-info-table" aria-label="Realm phase and content">
+          <tr><td class="realm-phase">WotLK Phase 1</td></tr>
+          <tr><td>Tier 7: Naxxramas, Eye of Eternity, Obsidian Sanctum</td></tr>
+          <tr><td>Level 80</td></tr>
+          <tr><td>PvP Season 5</td></tr>
+          <tr><td class="realm-next">Next: Phase 2 (Ulduar) ~June/July 2026</td></tr>
+        </table>
+      </div>
     </div>
-    <!-- Update the #realm-status block above when Warmane changes phase or content -->
-    <div class="server-time-bar">
-      <span class="server-time-label">Server time (US):</span>
-      <span id="server-date" class="server-date"></span>
-      <time id="server-time" class="server-time" datetime="">--:--:--</time>
-      <span id="server-time-sgt" class="server-time-sgt">(SGT --:--:--)</span>
-      <span class="raid-reset">Raid reset: Wednesday 04:00 (US) <span id="raid-reset-sgt" class="raid-reset-sgt">(SGT)</span></span>
-    </div>
-    <h1>Professions Profit Calculator</h1>
-    <p class="subtitle">Warmane – Onyxia</p>
     <nav class="top-level-nav" aria-label="Main sections">
       <button type="button" class="top-nav-btn active" data-view="professions">Professions</button>
       <button type="button" class="top-nav-btn" data-view="prospecting">Prospecting</button>

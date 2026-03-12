@@ -108,60 +108,62 @@ body {
 }
 
 .site-header {
-  padding: 1.5rem 1rem;
-  text-align: center;
+  padding: 1rem;
   border-bottom: 1px solid #3d3b37;
   background: #252422;
 }
 
-.server-version {
-  margin: 0 0 0.5rem;
+.header-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-box {
+  flex: 0 0 auto;
+  padding: 0.75rem 1rem;
+  background: #1c1b19;
+  border: 1px solid #3d3b37;
+  border-radius: 8px;
+  min-width: 11rem;
+  max-width: 14rem;
+}
+
+.header-box-left {
+  text-align: left;
+}
+
+.header-box-right {
+  text-align: right;
+}
+
+.header-info-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 0.8rem;
-  font-weight: 600;
-  color: #d4af37;
-  letter-spacing: 0.02em;
-}
-
-.realm-status {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem 0.5rem;
-  margin-bottom: 0.75rem;
-  font-size: 0.75rem;
   color: #a8a6a3;
 }
 
-.realm-status-phase {
+.header-info-table th {
   font-weight: 600;
   color: #d4af37;
+  padding: 0 0 0.25rem 0;
+  text-align: inherit;
+  border: none;
 }
 
-.realm-status-sep {
-  color: #5a5855;
-  user-select: none;
+.header-info-table td {
+  padding: 0.15rem 0;
+  border: none;
+  line-height: 1.35;
 }
 
-.realm-status-next {
-  color: #8a8885;
-}
-
-.server-time-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem 1.25rem;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #3d3b37;
-  font-size: 0.9rem;
-  color: #a8a6a3;
-}
-
-.server-time-label {
-  font-weight: 500;
+.header-info-table tr:first-child th {
+  padding-top: 0;
 }
 
 .server-date {
@@ -169,34 +171,70 @@ body {
   color: #a8a6a3;
 }
 
-.server-time {
+.site-header .server-time {
   font-variant-numeric: tabular-nums;
   font-weight: 600;
   color: #d4af37;
+  font-size: 1em;
 }
 
-.server-time-sgt,
-.raid-reset-sgt {
+.site-header .server-time-sgt,
+.site-header .raid-reset-sgt {
   color: #8a8885;
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
-.raid-reset {
+.site-header .raid-reset {
   font-weight: 500;
   color: #a8a6a3;
 }
 
+.header-title-block {
+  flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-width: 0;
+}
+
 .site-header h1 {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #fff;
+  line-height: 1.2;
 }
 
 .subtitle {
-  margin: 0.35rem 0 0;
-  font-size: 0.9rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
   color: #a8a6a3;
+}
+
+.header-box-right .header-info-table td {
+  color: #a8a6a3;
+}
+
+.realm-phase {
+  font-weight: 600;
+  color: #d4af37 !important;
+}
+
+.realm-next {
+  color: #8a8885 !important;
+  font-size: 0.95em;
+}
+
+@media (max-width: 700px) {
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-box-left { text-align: center; }
+  .header-box-right { text-align: center; }
+  .header-box-right .header-info-table td { text-align: center; }
+  .header-info-table th { text-align: center; }
 }
 
 .top-level-nav {
