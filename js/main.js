@@ -63,6 +63,12 @@
     return isNaN(n) ? 0 : n;
   }
 
+  function parseQuantityFromLabel(label) {
+    if (!label || typeof label !== 'string') return 1;
+    var m = label.match(/^(\d+)\s*[x×]\s*/i);
+    return m ? Math.max(1, parseInt(m[1], 10)) : 1;
+  }
+
   function normalizeItem(raw) {
     var wowheadId = raw.wowheadItemId != null ? parseInt(raw.wowheadItemId, 10) : null;
     if (raw.materials && Array.isArray(raw.materials)) {
@@ -90,8 +96,12 @@
     const profitCell = row.querySelector('.profit-cell');
     if (!materialsContainer || !sellingInput || !profitCell) return;
     var totalCost = 0;
-    materialsContainer.querySelectorAll('.material-price-input').forEach(function (inp) {
-      totalCost += parseNum(inp.value);
+    materialsContainer.querySelectorAll('.material-row').forEach(function (materialRow) {
+      var labelEl = materialRow.querySelector('.material-label');
+      var inp = materialRow.querySelector('.material-price-input');
+      if (!inp) return;
+      var qty = parseInt(materialRow.getAttribute('data-qty'), 10) || 1;
+      totalCost += qty * parseNum(inp.value);
     });
     var selling = parseNum(sellingInput.value);
     var profit = selling - totalCost;
@@ -104,10 +114,11 @@
     const item = normalizeItem(itemData);
     const tr = document.createElement('tr');
     const materialsHtml = item.materials.map(function (m, i) {
-      return '<div class="material-row">' +
+      var qty = parseQuantityFromLabel(m.label);
+      return '<div class="material-row" data-qty="' + qty + '">' +
         '<span class="material-label">' + escapeHtml(m.label) + '</span>' +
-        '<input type="number" min="0" step="0.1" class="material-price-input" value="' + (m.price || '') + '" data-row="row" placeholder="0">' +
-        '<span class="material-g-suffix">g</span>' +
+        '<input type="number" min="0" step="0.1" class="material-price-input" value="' + (m.price || '') + '" placeholder="0" title="Price per unit (g)">' +
+        '<span class="material-g-suffix">g each</span>' +
       '</div>';
     }).join('');
     var itemCellHtml = '<div class="item-name">' + escapeHtml(item.item) + '</div>';
