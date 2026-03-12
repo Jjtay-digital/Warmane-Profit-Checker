@@ -498,36 +498,46 @@ body {
   padding: 0.75rem 1rem 0.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem 1rem;
+  justify-content: flex-start;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
-.price-template-label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #a8a6a3;
+.price-template-group {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .price-template-btn {
-  padding: 0.35rem 0.65rem;
+  padding: 0.4rem 0.75rem;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #1c1b19;
-  background: #d4af37;
-  border: none;
+  color: #d4af37;
+  background: transparent;
+  border: 1px solid #d4af37;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .price-template-btn:hover {
-  background: #e8c968;
+  background: rgba(212, 175, 55, 0.15);
 }
 
-.price-template-hint {
-  font-size: 0.75rem;
-  color: #8a8885;
-  max-width: 320px;
+.price-template-select {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  color: #e8e6e3;
+  background: #252422;
+  border: 1px solid #3d3b37;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 5rem;
+}
+
+.price-template-select:focus {
+  outline: none;
+  border-color: #d4af37;
 }
 
 .profession-search-bar {

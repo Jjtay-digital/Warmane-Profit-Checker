@@ -352,9 +352,19 @@
   }
   initProfessionSearch();
 
-  var PRICE_TEMPLATE_KEY = 'warmane-calculator-price-template';
+  var PRICE_TEMPLATES_KEY = 'warmane-calculator-price-templates';
+  var TEMPLATE_SLOTS = 10;
 
-  function savePriceTemplate() {
+  function getTemplatesArray() {
+    try {
+      var raw = localStorage.getItem(PRICE_TEMPLATES_KEY);
+      if (!raw) return new Array(TEMPLATE_SLOTS);
+      var arr = JSON.parse(raw);
+      return Array.isArray(arr) ? arr : new Array(TEMPLATE_SLOTS);
+    } catch (e) { return new Array(TEMPLATE_SLOTS); }
+  }
+
+  function buildTemplateFromPage() {
     var template = { professions: {}, prospecting: {} };
     Object.keys(TBODY_IDS).forEach(function (profName) {
       var tbody = document.getElementById(TBODY_IDS[profName]);
@@ -406,18 +416,26 @@
       craftCost: craftInp ? parseNum(craftInp.value) : 0,
       mode: modeRaw && modeRaw.checked ? 'raw' : 'shuffle'
     };
+    return template;
+  }
+
+  function savePriceTemplate() {
+    var slotEl = document.getElementById('price-template-save-slot');
+    var slot = slotEl ? Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1)) : 1;
+    var arr = getTemplatesArray();
+    while (arr.length < TEMPLATE_SLOTS) arr.push(null);
+    arr[slot - 1] = buildTemplateFromPage();
     try {
-      localStorage.setItem(PRICE_TEMPLATE_KEY, JSON.stringify(template));
+      localStorage.setItem(PRICE_TEMPLATES_KEY, JSON.stringify(arr));
     } catch (e) {}
   }
 
   function loadPriceTemplate() {
-    var raw;
-    try {
-      raw = localStorage.getItem(PRICE_TEMPLATE_KEY);
-      if (!raw) return;
-      var template = JSON.parse(raw);
-    } catch (e) { return; }
+    var slotEl = document.getElementById('price-template-load-slot');
+    var slot = slotEl ? Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1)) : 1;
+    var arr = getTemplatesArray();
+    var template = arr[slot - 1];
+    if (!template) return;
     if (template.professions) {
       Object.keys(template.professions).forEach(function (profName) {
         var tbodyId = TBODY_IDS[profName];
