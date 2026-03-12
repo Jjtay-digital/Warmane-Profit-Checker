@@ -1,0 +1,1164 @@
+{
+  "Engineering": [
+    {
+      "item": "Mechano-Hog",
+      "wowheadItemId": 44412,
+      "materials": [
+        {
+          "label": "2x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "40x Handful of Cobalt Bolts",
+          "price": 0
+        },
+        {
+          "label": "1x Goblin-Machined Piston",
+          "price": 0
+        },
+        {
+          "label": "1x Salvaged Iron Golem Parts",
+          "price": 0
+        },
+        {
+          "label": "12x Titansteel Bar",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mekgineer's Chopper",
+      "wowheadItemId": 44413,
+      "materials": [
+        {
+          "label": "2x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "40x Handful of Cobalt Bolts",
+          "price": 0
+        },
+        {
+          "label": "1x Goblin-Machined Piston",
+          "price": 0
+        },
+        {
+          "label": "1x Salvaged Iron Golem Parts",
+          "price": 0
+        },
+        {
+          "label": "12x Titansteel Bar",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Hyperspeed Accelerators",
+      "wowheadItemId": 54793,
+      "materials": [
+        {
+          "label": "6x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Reticulated Armor Webbing",
+      "wowheadItemId": 41110,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Flexweave Underlay",
+      "wowheadItemId": 41111,
+      "materials": [
+        {
+          "label": "12x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "1x Overcharged Capacitor",
+          "price": 0
+        },
+        {
+          "label": "4x Cobalt Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Springy Arachnoweave",
+      "wowheadItemId": 41112,
+      "materials": [
+        {
+          "label": "12x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "1x Overcharged Capacitor",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Hand-Mounted Pyro Rocket",
+      "wowheadItemId": 41091,
+      "materials": [
+        {
+          "label": "6x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Nitro Boosts",
+      "wowheadItemId": 55016,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mana Injector",
+      "wowheadItemId": 41166,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "1x Frost Lotus",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Healing Injector",
+      "wowheadItemId": 41167,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "1x Frost Lotus",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Gnomish Army Knife",
+      "wowheadItemId": 40769,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mind Amplification Dish",
+      "wowheadItemId": 40868,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Froststeel Tube",
+          "price": 0
+        },
+        {
+          "label": "8x Cobalt Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Froststeel Tube",
+      "wowheadItemId": 41163,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Hair Trigger",
+      "wowheadItemId": 39691,
+      "materials": [
+        {
+          "label": "2x Cobalt Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Iceblade Arrow",
+      "wowheadItemId": 41165,
+      "materials": [
+        {
+          "label": "2x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Shatter Rounds",
+      "wowheadItemId": 41164,
+      "materials": [
+        {
+          "label": "2x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Electroflux Sight",
+      "wowheadItemId": 41146,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Gnomish X-Ray Specs",
+      "wowheadItemId": 40866,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Truesight Ice Blinders",
+      "wowheadItemId": 40867,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Portable Mana Loom",
+      "wowheadItemId": 40869,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Jewelcrafting": [],
+  "Enchanting": [
+    {
+      "item": "Scroll of Enchant Weapon - Berserking",
+      "wowheadItemId": 44630,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Weapon - Lifeward",
+      "wowheadItemId": 44592,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Weapon - Giant Slayer",
+      "wowheadItemId": 44595,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Bracers - Greater Stats",
+      "wowheadItemId": 44635,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Bracers - Major Spirit",
+      "wowheadItemId": 44947,
+      "materials": [
+        {
+          "label": "4x Greater Cosmic Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Gloves - Haste",
+      "wowheadItemId": 44593,
+      "materials": [
+        {
+          "label": "8x Eternal Fire",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Fire",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Cloak - Mighty Armor",
+      "wowheadItemId": 44591,
+      "materials": [
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Shield - Defense",
+      "wowheadItemId": 44466,
+      "materials": [
+        {
+          "label": "8x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Blacksmithing": [
+    {
+      "item": "Titansteel Destroyer",
+      "wowheadItemId": 41384,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "6x Titansteel Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titansteel Guardian",
+      "wowheadItemId": 41383,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "6x Titansteel Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sunblessed Gauntlets",
+      "wowheadItemId": 42442,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Sun Crystal",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sunblessed Breastplate",
+      "wowheadItemId": 42443,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "6x Sun Crystal",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Hauberk",
+      "wowheadItemId": 41129,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Legplates",
+      "wowheadItemId": 41130,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Skullshield",
+      "wowheadItemId": 41131,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Waistguard",
+      "wowheadItemId": 41132,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Walkers",
+      "wowheadItemId": 41133,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Air",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Gauntlets",
+      "wowheadItemId": 41134,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Fire",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Shoulders",
+      "wowheadItemId": 41135,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Life",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ornate Saronite Bracers",
+      "wowheadItemId": 41136,
+      "materials": [
+        {
+          "label": "6x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Brilliant Saronite Belt",
+      "wowheadItemId": 41126,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Brilliant Saronite Boots",
+      "wowheadItemId": 41127,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Air",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Brilliant Saronite Bracers",
+      "wowheadItemId": 41128,
+      "materials": [
+        {
+          "label": "6x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Spikeguard",
+      "wowheadItemId": 41974,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Titanium Bar",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Razorplate",
+      "wowheadItemId": 41975,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Titanium Bar",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Leatherworking": [
+    {
+      "item": "Bracers of Swift Death",
+      "wowheadItemId": 43260,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Boots of Wintry Endurance",
+      "wowheadItemId": 43261,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Moonshadow Armguards",
+      "wowheadItemId": 43262,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Nightshock Girdle",
+      "wowheadItemId": 43263,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scaled Armor of the Elder",
+      "wowheadItemId": 43264,
+      "materials": [
+        {
+          "label": "12x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Life",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Trollwoven Girdle",
+      "wowheadItemId": 43265,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Windripper Boots",
+      "wowheadItemId": 43266,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bladeborn Leggings",
+      "wowheadItemId": 43267,
+      "materials": [
+        {
+          "label": "10x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Giantmaim Legguards",
+      "wowheadItemId": 43268,
+      "materials": [
+        {
+          "label": "10x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Revenant's Breastplate",
+      "wowheadItemId": 43269,
+      "materials": [
+        {
+          "label": "12x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Cloak of the Frozen Wastes",
+      "wowheadItemId": 38425,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Arctic Wristguards",
+      "wowheadItemId": 38426,
+      "materials": [
+        {
+          "label": "4x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ice Scale Coif",
+      "wowheadItemId": 38427,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Nerubian Leg Armor",
+      "wowheadItemId": 38376,
+      "materials": [
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Tailoring": [
+    {
+      "item": "Frostwoven Strap",
+      "wowheadItemId": 41598,
+      "materials": [
+        {
+          "label": "3x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Shadowweave Leggings",
+      "wowheadItemId": 41597,
+      "materials": [
+        {
+          "label": "8x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Spellweave Gloves",
+      "wowheadItemId": 41612,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bolt of Imbued Frostweave",
+      "wowheadItemId": 41594,
+      "materials": [
+        {
+          "label": "4x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Abyssal Bag",
+      "wowheadItemId": 41610,
+      "materials": [
+        {
+          "label": "10x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Eternium Thread",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    }
+  ],
+  "Alchemy": [],
+  "Inscription": [],
+  "Cooking": []
+}

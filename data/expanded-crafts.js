@@ -304,14 +304,18 @@ const expanded = {
   ],
 };
 
-// Output JSON for merging (no Jewelcrafting – keep existing)
+// Merge expanded lists into items.json (no overwrite – add only missing by item name). No Jewelcrafting.
 const fs = require('fs');
 const path = require('path');
 const itemsPath = path.join(__dirname, 'items.json');
 const items = JSON.parse(fs.readFileSync(itemsPath, 'utf8'));
 Object.keys(expanded).forEach(prof => {
-  items[prof] = expanded[prof];
+  const existing = items[prof] || [];
+  const names = new Set(existing.map(e => e.item));
+  expanded[prof].forEach(entry => {
+    if (!names.has(entry.item)) { existing.push(entry); names.add(entry.item); }
+  });
+  items[prof] = existing;
 });
 fs.writeFileSync(itemsPath, JSON.stringify(items, null, 2));
-console.log('Updated items.json with expanded crafts for:', Object.keys(expanded).join(', '));
-Object.keys(expanded).forEach(prof => console.log('  ' + prof + ': ' + expanded[prof].length + ' items'));
+console.log('Merged expanded crafts into items.json');
