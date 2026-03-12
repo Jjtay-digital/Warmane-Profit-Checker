@@ -537,9 +537,12 @@
           materials.push(parseNum(inp.value));
         });
         var sellInp = tr.querySelector('.selling-price-input');
+        var sellingPrice = sellInp ? parseNum(sellInp.value) : 0;
+        var hasAnyValue = sellingPrice > 0 || materials.some(function (m) { return m > 0; });
+        if (!hasAnyValue) return;
         template.professions[profName][itemName] = {
           materials: materials,
-          sellingPrice: sellInp ? parseNum(sellInp.value) : 0
+          sellingPrice: sellingPrice
         };
       });
     });
