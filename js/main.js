@@ -353,6 +353,7 @@
   initProfessionSearch();
 
   var PRICE_TEMPLATES_KEY = 'warmane-calculator-price-templates';
+  var PRICE_TEMPLATE_NAMES_KEY = 'warmane-calculator-price-template-names';
   var TEMPLATE_SLOTS = 10;
 
   function getTemplatesArray() {
@@ -362,6 +363,57 @@
       var arr = JSON.parse(raw);
       return Array.isArray(arr) ? arr : new Array(TEMPLATE_SLOTS);
     } catch (e) { return new Array(TEMPLATE_SLOTS); }
+  }
+
+  function getTemplateNames() {
+    try {
+      var raw = localStorage.getItem(PRICE_TEMPLATE_NAMES_KEY);
+      if (!raw) return defaultSlotNames();
+      var arr = JSON.parse(raw);
+      if (!Array.isArray(arr) || arr.length !== TEMPLATE_SLOTS) return defaultSlotNames();
+      return arr.slice(0, TEMPLATE_SLOTS).map(function (s, i) { return (s && String(s).trim()) || 'Slot ' + (i + 1); });
+    } catch (e) { return defaultSlotNames(); }
+  }
+
+  function defaultSlotNames() {
+    var out = [];
+    for (var i = 1; i <= TEMPLATE_SLOTS; i++) out.push('Slot ' + i);
+    return out;
+  }
+
+  function saveTemplateNames(names) {
+    try {
+      var arr = names.slice(0, TEMPLATE_SLOTS);
+      while (arr.length < TEMPLATE_SLOTS) arr.push('Slot ' + (arr.length + 1));
+      localStorage.setItem(PRICE_TEMPLATE_NAMES_KEY, JSON.stringify(arr));
+    } catch (e) {}
+  }
+
+  function refreshTemplateSlotOptions() {
+    var names = getTemplateNames();
+    var saveSelect = document.getElementById('price-template-save-slot');
+    var loadSelect = document.getElementById('price-template-load-slot');
+    function fill(sel) {
+      if (!sel) return;
+      sel.innerHTML = '';
+      for (var i = 0; i < TEMPLATE_SLOTS; i++) {
+        var opt = document.createElement('option');
+        opt.value = String(i + 1);
+        opt.textContent = names[i] || ('Slot ' + (i + 1));
+        sel.appendChild(opt);
+      }
+    }
+    fill(saveSelect);
+    fill(loadSelect);
+  }
+
+  function syncRenameInputFromSaveSlot() {
+    var slotEl = document.getElementById('price-template-save-slot');
+    var inputEl = document.getElementById('price-template-slot-name');
+    if (!slotEl || !inputEl) return;
+    var slot = Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1));
+    var names = getTemplateNames();
+    inputEl.value = names[slot - 1] || ('Slot ' + slot);
   }
 
   function buildTemplateFromPage() {
@@ -488,11 +540,30 @@
     }
   }
 
+  function renamePriceTemplateSlot() {
+    var slotEl = document.getElementById('price-template-save-slot');
+    var inputEl = document.getElementById('price-template-slot-name');
+    if (!slotEl || !inputEl) return;
+    var slot = Math.max(1, Math.min(TEMPLATE_SLOTS, parseInt(slotEl.value, 10) || 1));
+    var name = (inputEl.value && inputEl.value.trim()) || ('Slot ' + slot);
+    var names = getTemplateNames();
+    names[slot - 1] = name;
+    saveTemplateNames(names);
+    refreshTemplateSlotOptions();
+    syncRenameInputFromSaveSlot();
+  }
+
   function initPriceTemplate() {
+    refreshTemplateSlotOptions();
+    syncRenameInputFromSaveSlot();
     var saveBtn = document.getElementById('price-template-save');
     var loadBtn = document.getElementById('price-template-load');
+    var saveSlot = document.getElementById('price-template-save-slot');
+    var renameBtn = document.getElementById('price-template-rename');
     if (saveBtn) saveBtn.addEventListener('click', savePriceTemplate);
     if (loadBtn) loadBtn.addEventListener('click', loadPriceTemplate);
+    if (saveSlot) saveSlot.addEventListener('change', syncRenameInputFromSaveSlot);
+    if (renameBtn) renameBtn.addEventListener('click', renamePriceTemplateSlot);
   }
   initPriceTemplate();
 
