@@ -413,6 +413,17 @@
     });
   }
 
+  function initCrafterFormToggle() {
+    var toggle = document.getElementById('crafter-form-toggle');
+    var body = document.getElementById('crafter-form-body');
+    if (!toggle || !body) return;
+    toggle.addEventListener('click', function () {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      body.hidden = expanded;
+    });
+  }
+
   function initCrafterForm() {
     var form = document.getElementById('crafter-form');
     var nameInput = document.getElementById('crafter-name');
@@ -451,6 +462,7 @@
   function initSidePanel() {
     renderSidePanel();
   }
+  initCrafterFormToggle();
   initCrafterForm();
   initSidePanel();
 })();
