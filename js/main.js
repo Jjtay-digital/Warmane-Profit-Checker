@@ -352,6 +352,132 @@
   }
   initProfessionSearch();
 
+  var PRICE_TEMPLATE_KEY = 'warmane-calculator-price-template';
+
+  function savePriceTemplate() {
+    var template = { professions: {}, prospecting: {} };
+    Object.keys(TBODY_IDS).forEach(function (profName) {
+      var tbody = document.getElementById(TBODY_IDS[profName]);
+      if (!tbody) return;
+      template.professions[profName] = {};
+      tbody.querySelectorAll('tr').forEach(function (tr) {
+        var itemEl = tr.querySelector('.item-name');
+        var itemName = itemEl ? itemEl.textContent.trim() : '';
+        if (!itemName) return;
+        var materials = [];
+        tr.querySelectorAll('.material-price-input').forEach(function (inp) {
+          materials.push(parseNum(inp.value));
+        });
+        var sellInp = tr.querySelector('.selling-price-input');
+        template.professions[profName][itemName] = {
+          materials: materials,
+          sellingPrice: sellInp ? parseNum(sellInp.value) : 0
+        };
+      });
+    });
+    var stackInp = document.getElementById('prospecting-stack');
+    var eyeInp = document.getElementById('prospecting-dragonseye');
+    var epicInp = document.getElementById('prospecting-epic');
+    var rareInp = document.getElementById('prospecting-rare');
+    template.prospecting.titanium = {
+      stack: stackInp ? parseNum(stackInp.value) : 0,
+      dragonseye: eyeInp ? parseNum(eyeInp.value) : 0,
+      epic: epicInp ? parseNum(epicInp.value) : 0,
+      rare: rareInp ? parseNum(rareInp.value) : 0
+    };
+    var saroniteStack = document.getElementById('saronite-stack');
+    var rareIds = ['saronite-rare-scarlet', 'saronite-rare-sky', 'saronite-rare-autumn', 'saronite-rare-monarch', 'saronite-rare-twilight', 'saronite-rare-forest'];
+    var dustInp = document.getElementById('saronite-dust');
+    var essenceInp = document.getElementById('saronite-essence');
+    var uncommonInp = document.getElementById('saronite-uncommon-price');
+    var craftInp = document.getElementById('saronite-craft-cost');
+    var modeRaw = document.querySelector('input[name="saronite-uncommon-mode"][value="raw"]');
+    template.prospecting.saronite = {
+      stack: saroniteStack ? parseNum(saroniteStack.value) : 0,
+      rareScarlet: parseNum(document.getElementById(rareIds[0]) && document.getElementById(rareIds[0]).value),
+      rareSky: parseNum(document.getElementById(rareIds[1]) && document.getElementById(rareIds[1]).value),
+      rareAutumn: parseNum(document.getElementById(rareIds[2]) && document.getElementById(rareIds[2]).value),
+      rareMonarch: parseNum(document.getElementById(rareIds[3]) && document.getElementById(rareIds[3]).value),
+      rareTwilight: parseNum(document.getElementById(rareIds[4]) && document.getElementById(rareIds[4]).value),
+      rareForest: parseNum(document.getElementById(rareIds[5]) && document.getElementById(rareIds[5]).value),
+      dust: dustInp ? parseNum(dustInp.value) : 0,
+      essence: essenceInp ? parseNum(essenceInp.value) : 0,
+      uncommonPrice: uncommonInp ? parseNum(uncommonInp.value) : 0,
+      craftCost: craftInp ? parseNum(craftInp.value) : 0,
+      mode: modeRaw && modeRaw.checked ? 'raw' : 'shuffle'
+    };
+    try {
+      localStorage.setItem(PRICE_TEMPLATE_KEY, JSON.stringify(template));
+    } catch (e) {}
+  }
+
+  function loadPriceTemplate() {
+    var raw;
+    try {
+      raw = localStorage.getItem(PRICE_TEMPLATE_KEY);
+      if (!raw) return;
+      var template = JSON.parse(raw);
+    } catch (e) { return; }
+    if (template.professions) {
+      Object.keys(template.professions).forEach(function (profName) {
+        var tbodyId = TBODY_IDS[profName];
+        if (!tbodyId) return;
+        var tbody = document.getElementById(tbodyId);
+        if (!tbody) return;
+        var profData = template.professions[profName];
+        tbody.querySelectorAll('tr').forEach(function (tr) {
+          var itemEl = tr.querySelector('.item-name');
+          var itemName = itemEl ? itemEl.textContent.trim() : '';
+          var data = profData[itemName];
+          if (!data) return;
+          var materialInputs = tr.querySelectorAll('.material-price-input');
+          if (data.materials && data.materials.length === materialInputs.length) {
+            materialInputs.forEach(function (inp, i) {
+              inp.value = data.materials[i] || 0;
+            });
+          }
+          var sellInp = tr.querySelector('.selling-price-input');
+          if (sellInp && data.sellingPrice != null) sellInp.value = data.sellingPrice;
+          updateProfitCell(tr);
+        });
+      });
+    }
+    if (template.prospecting) {
+      var t = template.prospecting.titanium;
+      if (t) {
+        var s = document.getElementById('prospecting-stack'); if (s) s.value = t.stack;
+        var e = document.getElementById('prospecting-dragonseye'); if (e) e.value = t.dragonseye;
+        var ep = document.getElementById('prospecting-epic'); if (ep) ep.value = t.epic;
+        var r = document.getElementById('prospecting-rare'); if (r) r.value = t.rare;
+        if (s) s.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+      var saron = template.prospecting.saronite;
+      if (saron) {
+        var ss = document.getElementById('saronite-stack'); if (ss) ss.value = saron.stack;
+        var rareIds = ['saronite-rare-scarlet', 'saronite-rare-sky', 'saronite-rare-autumn', 'saronite-rare-monarch', 'saronite-rare-twilight', 'saronite-rare-forest'];
+        var rareVals = [saron.rareScarlet, saron.rareSky, saron.rareAutumn, saron.rareMonarch, saron.rareTwilight, saron.rareForest];
+        rareIds.forEach(function (id, i) { var el = document.getElementById(id); if (el) el.value = rareVals[i] != null ? rareVals[i] : 0; });
+        var du = document.getElementById('saronite-dust'); if (du) du.value = saron.dust != null ? saron.dust : 0;
+        var es = document.getElementById('saronite-essence'); if (es) es.value = saron.essence != null ? saron.essence : 0;
+        var un = document.getElementById('saronite-uncommon-price'); if (un) un.value = saron.uncommonPrice != null ? saron.uncommonPrice : 0;
+        var cr = document.getElementById('saronite-craft-cost'); if (cr) cr.value = saron.craftCost != null ? saron.craftCost : 0;
+        var mode = saron.mode === 'raw' ? 'raw' : 'shuffle';
+        var radio = document.querySelector('input[name="saronite-uncommon-mode"][value="' + mode + '"]');
+        if (radio) radio.checked = true;
+      }
+      var firstSaronite = document.getElementById('saronite-stack');
+      if (firstSaronite) firstSaronite.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+  }
+
+  function initPriceTemplate() {
+    var saveBtn = document.getElementById('price-template-save');
+    var loadBtn = document.getElementById('price-template-load');
+    if (saveBtn) saveBtn.addEventListener('click', savePriceTemplate);
+    if (loadBtn) loadBtn.addEventListener('click', loadPriceTemplate);
+  }
+  initPriceTemplate();
+
   function initScrollToTop() {
     var btn = document.getElementById('scroll-to-top');
     if (!btn) return;

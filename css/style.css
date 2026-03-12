@@ -492,12 +492,51 @@ body {
   border-bottom-color: #d4af37;
 }
 
+.price-template-bar {
+  max-width: 960px;
+  margin: 0 auto 0.25rem;
+  padding: 0.75rem 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.price-template-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a8a6a3;
+}
+
+.price-template-btn {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1c1b19;
+  background: #d4af37;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.price-template-btn:hover {
+  background: #e8c968;
+}
+
+.price-template-hint {
+  font-size: 0.75rem;
+  color: #8a8885;
+  max-width: 320px;
+}
+
 .profession-search-bar {
   max-width: 960px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   flex-wrap: wrap;
   background: #252422;
