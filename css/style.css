@@ -693,6 +693,18 @@ body {
   background: #2d2b28;
 }
 
+.profit-table tbody tr.engineering-subclass-header td {
+  font-weight: 600;
+  color: #d4af37;
+  background: #252422;
+  border-top: 1px solid #3d3b37;
+  padding-top: 0.75rem;
+}
+
+.profit-table tbody tr.engineering-subclass-header:hover {
+  background: #252422;
+}
+
 .profit-table .profit-cell {
   font-weight: 600;
   color: #7cb87c;

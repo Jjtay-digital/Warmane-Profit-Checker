@@ -71,6 +71,23 @@
     cooking: 'Cooking'
   };
 
+  // Engineering subclasses (from Wowhead-style categories). Display order.
+  var ENGINEERING_SUBCLASS_ORDER = ['Mount', 'Guns', 'Tinker', 'Devices', 'Explosives', 'Parts', 'Arrow', 'Bullet', 'Cloth', 'Plate', 'Miscellaneous', 'Engineering Bag', 'Junk', 'Other'];
+  var ENGINEERING_SUBCLASS = {
+    'Mechano-Hog': 'Mount', "Mekgineer's Chopper": 'Mount',
+    'Nesingwary 4000': 'Guns',
+    'Hyperspeed Accelerators': 'Tinker', 'Reticulated Armor Webbing': 'Tinker', 'Flexweave Underlay': 'Tinker', 'Springy Arachnoweave': 'Tinker', 'Hand-Mounted Pyro Rocket': 'Tinker', 'Nitro Boosts': 'Tinker',
+    'MOLL-E': 'Devices', 'Noise Machine': 'Devices', 'Gnomish Army Knife': 'Devices', 'Mind Amplification Dish': 'Devices', 'Gnomish X-Ray Specs': 'Devices', 'Truesight Ice Blinders': 'Devices', 'Portable Mana Loom': 'Devices', 'Wormhole Generator: Northrend': 'Devices', 'Titanium Toolbox': 'Devices', 'Gnomish Lightning Generator': 'Devices', 'Goblin Beam Welder': 'Devices', 'Goblin Rocket Launcher': 'Devices',
+    'Global Thermal Sapper Charge': 'Explosives', 'Saronite Bomb': 'Explosives', 'Cobalt Frag Bomb': 'Explosives',
+    'Volatile Blasting Trigger': 'Parts', 'Overcharged Capacitor': 'Parts', 'Froststeel Tube': 'Parts', 'Armor Plating': 'Parts', 'Hair Trigger': 'Parts', 'Electroflux Sight': 'Parts', 'Mammoth Cutters': 'Parts', 'Diamond-Cut Refractor Scope': 'Parts', 'Sun Scope': 'Parts', 'Heartseeker Scope': 'Parts',
+    'Iceblade Arrow': 'Arrow', 'Saronite Razorbolt': 'Arrow',
+    'Shatter Rounds': 'Bullet', 'Saronite Shells': 'Bullet',
+    'Mana Injector': 'Miscellaneous', 'Healing Injector': 'Miscellaneous'
+  };
+  function getEngineeringSubclass(itemName) {
+    return ENGINEERING_SUBCLASS[itemName] || 'Other';
+  }
+
   // WoW quality: 1 common (white), 2 uncommon (green), 3 rare (blue), 4 epic (purple). Sort order: epic first, then rare, uncommon, common.
   var QUALITY_BY_ITEM_ID = {
     46376: 4, 46377: 4, 46378: 4, 46379: 4, 44412: 4, 44413: 4, 44504: 4, 44503: 4, 41285: 4, 41307: 4, 41333: 4, 41335: 4,
@@ -230,10 +247,50 @@
     const tbody = document.getElementById(tbodyId);
     if (!tbody) return;
     tbody.innerHTML = '';
-    items = items.slice().sort(function (a, b) { return getItemQuality(b) - getItemQuality(a); });
-    items.forEach(function (item) {
-      tbody.appendChild(renderRow(item));
-    });
+    if (professionName === 'Engineering') {
+      var order = ENGINEERING_SUBCLASS_ORDER;
+      var grouped = {};
+      items.forEach(function (item) {
+        var sub = getEngineeringSubclass(item.item);
+        if (!grouped[sub]) grouped[sub] = [];
+        grouped[sub].push(item);
+      });
+      order.forEach(function (subclass) {
+        var list = grouped[subclass];
+        if (!list || list.length === 0) return;
+        list.sort(function (a, b) { return getItemQuality(b) - getItemQuality(a); });
+        var headerRow = document.createElement('tr');
+        headerRow.className = 'engineering-subclass-header';
+        headerRow.setAttribute('data-subclass', subclass);
+        headerRow.innerHTML = '<td colspan="4">' + escapeHtml(subclass) + '</td>';
+        tbody.appendChild(headerRow);
+        list.forEach(function (item) {
+          var tr = renderRow(item);
+          tr.setAttribute('data-subclass', subclass);
+          tbody.appendChild(tr);
+        });
+      });
+      Object.keys(grouped).forEach(function (subclass) {
+        if (order.indexOf(subclass) !== -1) return;
+        var list = grouped[subclass];
+        list.sort(function (a, b) { return getItemQuality(b) - getItemQuality(a); });
+        var headerRow = document.createElement('tr');
+        headerRow.className = 'engineering-subclass-header';
+        headerRow.setAttribute('data-subclass', subclass);
+        headerRow.innerHTML = '<td colspan="4">' + escapeHtml(subclass) + '</td>';
+        tbody.appendChild(headerRow);
+        list.forEach(function (item) {
+          var tr = renderRow(item);
+          tr.setAttribute('data-subclass', subclass);
+          tbody.appendChild(tr);
+        });
+      });
+    } else {
+      items = items.slice().sort(function (a, b) { return getItemQuality(b) - getItemQuality(a); });
+      items.forEach(function (item) {
+        tbody.appendChild(renderRow(item));
+      });
+    }
   }
 
   var FALLBACK_DATA = {
@@ -357,6 +414,18 @@
     if (!tbody) return;
     var q = (input.value || '').trim().toLowerCase();
     tbody.querySelectorAll('tr').forEach(function (tr) {
+      if (tr.classList.contains('engineering-subclass-header')) {
+        var sub = tr.getAttribute('data-subclass');
+        var itemRows = tbody.querySelectorAll('tr[data-subclass="' + sub + '"]:not(.engineering-subclass-header)');
+        var anyMatch = false;
+        itemRows.forEach(function (row) {
+          var cell = row.querySelector('.item-cell');
+          var text = cell ? cell.textContent : '';
+          if (!q || text.toLowerCase().indexOf(q) !== -1) anyMatch = true;
+        });
+        tr.classList.toggle('filtered-out', !anyMatch);
+        return;
+      }
       var itemCell = tr.querySelector('.item-cell');
       var itemText = itemCell ? itemCell.textContent : '';
       var match = !q || itemText.toLowerCase().indexOf(q) !== -1;
