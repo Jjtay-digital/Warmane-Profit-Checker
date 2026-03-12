@@ -71,6 +71,20 @@
     cooking: 'Cooking'
   };
 
+  // WoW quality: 1 common (white), 2 uncommon (green), 3 rare (blue), 4 epic (purple). Sort order: epic first, then rare, uncommon, common.
+  var QUALITY_BY_ITEM_ID = {
+    46376: 4, 46377: 4, 46378: 4, 46379: 4, 44412: 4, 44413: 4, 44504: 4, 44503: 4, 41285: 4, 41307: 4, 41333: 4, 41335: 4,
+    40096: 3, 40098: 3, 40099: 3, 40008: 3, 40112: 3, 40113: 3, 42642: 3, 42643: 3, 42644: 3, 42645: 3, 43015: 3,
+    41599: 3, 41602: 3, 41604: 3, 41609: 3, 41610: 3, 45056: 3, 38921: 3, 41600: 3, 41601: 3, 42443: 3, 42442: 3,
+    41386: 3, 41387: 3, 41385: 3, 41353: 3, 41354: 3, 41355: 3, 41356: 3, 41357: 3, 41358: 3, 41359: 3, 41360: 3, 41361: 3,
+    39998: 3, 39999: 3, 40001: 3, 40002: 3, 40003: 3, 40005: 3, 40009: 3, 40010: 3, 40011: 3, 40012: 3, 40013: 3, 40014: 3,
+    40015: 3, 40016: 3, 40017: 3, 40018: 3, 40019: 3, 40020: 3, 40021: 3, 40022: 3, 40023: 3, 40024: 3, 40025: 3, 40026: 3,
+    40027: 3, 40028: 3, 40029: 3, 40030: 3, 40058: 3, 40059: 3, 40060: 3, 40061: 3, 40062: 3, 40063: 3, 40064: 3, 40065: 3,
+    40066: 3, 40067: 3, 40068: 3, 40069: 3, 40070: 3, 40071: 3, 40072: 3, 40073: 3, 40074: 3, 40088: 3, 40089: 3, 40090: 3,
+    40091: 3, 40092: 3, 40093: 3, 40094: 3, 40095: 3, 40105: 3, 40106: 3, 40114: 3, 40115: 3, 40116: 3, 40117: 3, 40118: 3,
+    40119: 3, 40120: 3, 40121: 3, 40122: 3, 40123: 3, 40124: 3, 40125: 3, 40126: 3, 40127: 3, 40128: 3, 40129: 3
+  };
+
   var STATIC_CRAFTERS = {
     engineering: ['Mtjin'],
     jewelcrafting: ['Mtjin'],
@@ -117,12 +131,20 @@
     return m ? Math.max(1, parseInt(m[1], 10)) : 1;
   }
 
+  function getItemQuality(raw) {
+    if (raw.quality != null && raw.quality >= 1 && raw.quality <= 4) return raw.quality;
+    var id = raw.wowheadItemId != null ? parseInt(raw.wowheadItemId, 10) : null;
+    return (id && QUALITY_BY_ITEM_ID[id]) || 1;
+  }
+
   function normalizeItem(raw) {
     var wowheadId = raw.wowheadItemId != null ? parseInt(raw.wowheadItemId, 10) : null;
+    var quality = getItemQuality(raw);
     if (raw.materials && Array.isArray(raw.materials)) {
       return {
         item: raw.item,
         wowheadItemId: isNaN(wowheadId) ? null : wowheadId,
+        quality: quality,
         materials: raw.materials.map(function (m) {
           return { label: m.label || '', price: parseNum(m.price) };
         }),
@@ -133,6 +155,7 @@
     return {
       item: raw.item,
       wowheadItemId: isNaN(wowheadId) ? null : wowheadId,
+      quality: quality,
       materials: labels.length ? labels.map(function (l) { return { label: l, price: 0 }; }) : [{ label: '—', price: 0 }],
       sellingPrice: parseNum(raw.sellingPrice != null ? raw.sellingPrice : raw.materialCost)
     };
@@ -207,6 +230,7 @@
     const tbody = document.getElementById(tbodyId);
     if (!tbody) return;
     tbody.innerHTML = '';
+    items = items.slice().sort(function (a, b) { return getItemQuality(b) - getItemQuality(a); });
     items.forEach(function (item) {
       tbody.appendChild(renderRow(item));
     });
@@ -266,6 +290,11 @@
     Object.keys(TBODY_IDS).forEach(function (profession) {
       const items = data[profession];
       if (Array.isArray(items)) renderTable(profession, items);
+    });
+    Object.keys(TBODY_IDS).forEach(function (profession) {
+      var count = (data[profession] && data[profession].length) || 0;
+      var tab = document.querySelector('.tab-btn[data-profession="' + profession.toLowerCase() + '"]');
+      if (tab) tab.textContent = profession + ' (' + count + ')';
     });
   }
 
