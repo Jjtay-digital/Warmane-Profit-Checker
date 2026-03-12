@@ -4,10 +4,308 @@
       "item": "Global Thermal Sapper Charge",
       "wowheadItemId": 42641,
       "materials": [
-        { "label": "1x Saronite Bar", "price": 0 },
-        { "label": "1x Volatile Blasting Trigger", "price": 0 },
-        { "label": "1x Cobalt Bar", "price": 0 },
-        { "label": "1x Crystallized Water", "price": 0 }
+        {
+          "label": "1x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Volatile Blasting Trigger",
+          "price": 0
+        },
+        {
+          "label": "1x Cobalt Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Saronite Bomb",
+      "wowheadItemId": 41119,
+      "materials": [
+        {
+          "label": "3x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Cobalt Frag Bomb",
+      "wowheadItemId": 39977,
+      "materials": [
+        {
+          "label": "2x Cobalt Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Diamond-Cut Refractor Scope",
+      "wowheadItemId": 42421,
+      "materials": [
+        {
+          "label": "1x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Sun Crystal",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Armor Plating",
+      "wowheadItemId": 40668,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Volatile Blasting Trigger",
+      "wowheadItemId": 39690,
+      "materials": [
+        {
+          "label": "2x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Overcharged Capacitor",
+      "wowheadItemId": 39681,
+      "materials": [
+        {
+          "label": "2x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sun Scope",
+      "wowheadItemId": 42420,
+      "materials": [
+        {
+          "label": "1x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Sun Crystal",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Heartseeker Scope",
+      "wowheadItemId": 42418,
+      "materials": [
+        {
+          "label": "1x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Sun Crystal",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Saronite Razorbolt",
+      "wowheadItemId": 41168,
+      "materials": [
+        {
+          "label": "3x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mammoth Cutters",
+      "wowheadItemId": 39688,
+      "materials": [
+        {
+          "label": "2x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Saronite Shells",
+      "wowheadItemId": 39685,
+      "materials": [
+        {
+          "label": "2x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Gnomish Lightning Generator",
+      "wowheadItemId": 39683,
+      "materials": [
+        {
+          "label": "2x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Toolbox",
+      "wowheadItemId": 40536,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Titanium Bar",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Wormhole Generator: Northrend",
+      "wowheadItemId": 48933,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Titanium Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Chaos Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Goblin Beam Welder",
+      "wowheadItemId": 40771,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Goblin Rocket Launcher",
+      "wowheadItemId": 40895,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Volatile Blasting Trigger",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "MOLL-E",
+      "wowheadItemId": 40772,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Noise Machine",
+      "wowheadItemId": 40865,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Earth",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -17,8 +315,14 @@
       "item": "Runed Scarlet Ruby",
       "wowheadItemId": 39998,
       "materials": [
-        { "label": "1x Scarlet Ruby", "price": 0 },
-        { "label": "1x Eternal Shadow", "price": 0 }
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -26,8 +330,209 @@
       "item": "Bright Scarlet Ruby",
       "wowheadItemId": 39999,
       "materials": [
-        { "label": "1x Scarlet Ruby", "price": 0 },
-        { "label": "1x Eternal Fire", "price": 0 }
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bold Scarlet Ruby",
+      "wowheadItemId": 40001,
+      "materials": [
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Delicate Scarlet Ruby",
+      "wowheadItemId": 40002,
+      "materials": [
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Flashing Scarlet Ruby",
+      "wowheadItemId": 40003,
+      "materials": [
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fractured Scarlet Ruby",
+      "wowheadItemId": 40005,
+      "materials": [
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Precise Scarlet Ruby",
+      "wowheadItemId": 40009,
+      "materials": [
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Subtle Scarlet Ruby",
+      "wowheadItemId": 40010,
+      "materials": [
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Brilliant Autumn's Glow",
+      "wowheadItemId": 40024,
+      "materials": [
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Quick Autumn's Glow",
+      "wowheadItemId": 40025,
+      "materials": [
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Smooth Autumn's Glow",
+      "wowheadItemId": 40026,
+      "materials": [
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Rigid Autumn's Glow",
+      "wowheadItemId": 40027,
+      "materials": [
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Thick Autumn's Glow",
+      "wowheadItemId": 40028,
+      "materials": [
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mystic Autumn's Glow",
+      "wowheadItemId": 40029,
+      "materials": [
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Great Autumn's Glow",
+      "wowheadItemId": 40030,
+      "materials": [
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Life",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -35,8 +540,1151 @@
       "item": "Solid Sky Sapphire",
       "wowheadItemId": 40008,
       "materials": [
-        { "label": "1x Sky Sapphire", "price": 0 },
-        { "label": "1x Eternal Earth", "price": 0 }
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sparkling Sky Sapphire",
+      "wowheadItemId": 40011,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stormy Sky Sapphire",
+      "wowheadItemId": 40012,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Lustrous Sky Sapphire",
+      "wowheadItemId": 40013,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Life",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Brilliant Sky Sapphire",
+      "wowheadItemId": 40014,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Rigid Sky Sapphire",
+      "wowheadItemId": 40015,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Smooth Sky Sapphire",
+      "wowheadItemId": 40016,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Precise Sky Sapphire",
+      "wowheadItemId": 40017,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Runed Sky Sapphire",
+      "wowheadItemId": 40018,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bright Sky Sapphire",
+      "wowheadItemId": 40019,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Delicate Sky Sapphire",
+      "wowheadItemId": 40020,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Flashing Sky Sapphire",
+      "wowheadItemId": 40021,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Subtle Sky Sapphire",
+      "wowheadItemId": 40022,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Thick Sky Sapphire",
+      "wowheadItemId": 40023,
+      "materials": [
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Accurate Monarch Topaz",
+      "wowheadItemId": 40058,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Champion's Monarch Topaz",
+      "wowheadItemId": 40059,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Deft Monarch Topaz",
+      "wowheadItemId": 40060,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Etched Monarch Topaz",
+      "wowheadItemId": 40061,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fierce Monarch Topaz",
+      "wowheadItemId": 40062,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glimmering Monarch Topaz",
+      "wowheadItemId": 40063,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Inscribed Monarch Topaz",
+      "wowheadItemId": 40064,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Lucid Monarch Topaz",
+      "wowheadItemId": 40065,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Luminous Monarch Topaz",
+      "wowheadItemId": 40066,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Potent Monarch Topaz",
+      "wowheadItemId": 40067,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Pristine Monarch Topaz",
+      "wowheadItemId": 40068,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Resolute Monarch Topaz",
+      "wowheadItemId": 40069,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Resplendent Monarch Topaz",
+      "wowheadItemId": 40070,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Life",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stalwart Monarch Topaz",
+      "wowheadItemId": 40071,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stark Monarch Topaz",
+      "wowheadItemId": 40072,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Reckless Monarch Topaz",
+      "wowheadItemId": 40073,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Wicked Monarch Topaz",
+      "wowheadItemId": 40074,
+      "materials": [
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Misty Forest Emerald",
+      "wowheadItemId": 40088,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Lambent Forest Emerald",
+      "wowheadItemId": 40089,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Shining Forest Emerald",
+      "wowheadItemId": 40090,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sundered Forest Emerald",
+      "wowheadItemId": 40091,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Life",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Tenuous Forest Emerald",
+      "wowheadItemId": 40092,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Timeless Forest Emerald",
+      "wowheadItemId": 40093,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Energized Forest Emerald",
+      "wowheadItemId": 40094,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Vivid Forest Emerald",
+      "wowheadItemId": 40095,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Forceful Forest Emerald",
+      "wowheadItemId": 40096,
+      "materials": [
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Guardian's Twilight Opal",
+      "wowheadItemId": 40105,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Puissant Twilight Opal",
+      "wowheadItemId": 40106,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sovereign Twilight Opal",
+      "wowheadItemId": 40112,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Shifting Twilight Opal",
+      "wowheadItemId": 40113,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Regal Twilight Opal",
+      "wowheadItemId": 40114,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Defender's Twilight Opal",
+      "wowheadItemId": 40115,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Purified Twilight Opal",
+      "wowheadItemId": 40116,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Infused Twilight Opal",
+      "wowheadItemId": 40117,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mysterious Twilight Opal",
+      "wowheadItemId": 40118,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Balanced Twilight Opal",
+      "wowheadItemId": 40119,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Durable Twilight Opal",
+      "wowheadItemId": 40120,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Radiant Twilight Opal",
+      "wowheadItemId": 40121,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glowing Twilight Opal",
+      "wowheadItemId": 40122,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Royal Twilight Opal",
+      "wowheadItemId": 40123,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Inscribed Twilight Opal",
+      "wowheadItemId": 40124,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Etched Twilight Opal",
+      "wowheadItemId": 40125,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Champion's Twilight Opal",
+      "wowheadItemId": 40126,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Resplendent Twilight Opal",
+      "wowheadItemId": 40127,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Life",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stalwart Twilight Opal",
+      "wowheadItemId": 40128,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Defensive Twilight Opal",
+      "wowheadItemId": 40129,
+      "materials": [
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Chaotic Skyflare Diamond",
+      "wowheadItemId": 41285,
+      "materials": [
+        {
+          "label": "1x Skyflare Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Ember Skyflare Diamond",
+      "wowheadItemId": 41307,
+      "materials": [
+        {
+          "label": "1x Skyflare Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Enigmatic Skyflare Diamond",
+      "wowheadItemId": 41333,
+      "materials": [
+        {
+          "label": "1x Skyflare Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Forlorn Skyflare Diamond",
+      "wowheadItemId": 41335,
+      "materials": [
+        {
+          "label": "1x Skyflare Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Swift Skyflare Diamond",
+      "wowheadItemId": 41339,
+      "materials": [
+        {
+          "label": "1x Skyflare Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Tireless Skyflare Diamond",
+      "wowheadItemId": 41375,
+      "materials": [
+        {
+          "label": "1x Skyflare Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Persistent Earthsiege Diamond",
+      "wowheadItemId": 41381,
+      "materials": [
+        {
+          "label": "1x Earthsiege Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Powerful Earthsiege Diamond",
+      "wowheadItemId": 41397,
+      "materials": [
+        {
+          "label": "1x Earthsiege Diamond",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bold Dragon's Eye",
+      "wowheadItemId": 42142,
+      "materials": [
+        {
+          "label": "1x Dragon's Eye",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Delicate Dragon's Eye",
+      "wowheadItemId": 42143,
+      "materials": [
+        {
+          "label": "1x Dragon's Eye",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Brilliant Dragon's Eye",
+      "wowheadItemId": 42148,
+      "materials": [
+        {
+          "label": "1x Dragon's Eye",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Solid Dragon's Eye",
+      "wowheadItemId": 36767,
+      "materials": [
+        {
+          "label": "1x Dragon's Eye",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Nightmare Tear",
+      "wowheadItemId": 49110,
+      "materials": [
+        {
+          "label": "1x Dragon's Eye",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Icy Prism",
+      "wowheadItemId": 44943,
+      "materials": [
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        },
+        {
+          "label": "1x Chalcedony",
+          "price": 0
+        },
+        {
+          "label": "1x Shadow Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Dark Jade",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stoneguard Band",
+      "wowheadItemId": 43248,
+      "materials": [
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Shadowmight Ring",
+      "wowheadItemId": 43249,
+      "materials": [
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bloodstone Band",
+      "wowheadItemId": 42336,
+      "materials": [
+        {
+          "label": "1x Bloodstone",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sun Rock Ring",
+      "wowheadItemId": 42337,
+      "materials": [
+        {
+          "label": "1x Sun Crystal",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Crystal Citrine Necklace",
+      "wowheadItemId": 43244,
+      "materials": [
+        {
+          "label": "1x Huge Citrine",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Crystal Chalcedony Amulet",
+      "wowheadItemId": 43245,
+      "materials": [
+        {
+          "label": "1x Chalcedony",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Earth",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -46,9 +1694,18 @@
       "item": "Scroll of Enchant Staff - Greater Spellpower",
       "wowheadItemId": 45056,
       "materials": [
-        { "label": "1x Abyss Crystal", "price": 0 },
-        { "label": "8x Greater Cosmic Essence", "price": 0 },
-        { "label": "1x Runed Titanium Rod", "price": 0 }
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Greater Cosmic Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -56,9 +1713,18 @@
       "item": "Scroll of Enchant Weapon - Major Spellpower",
       "wowheadItemId": 38921,
       "materials": [
-        { "label": "8x Large Prismatic Shard", "price": 0 },
-        { "label": "8x Greater Planar Essence", "price": 0 },
-        { "label": "1x Runed Titanium Rod", "price": 0 }
+        {
+          "label": "8x Large Prismatic Shard",
+          "price": 0
+        },
+        {
+          "label": "8x Greater Planar Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -66,9 +1732,18 @@
       "item": "Scroll of Enchant Bracers - Major Stamina",
       "wowheadItemId": 44947,
       "materials": [
-        { "label": "4x Greater Cosmic Essence", "price": 0 },
-        { "label": "1x Abyss Crystal", "price": 0 },
-        { "label": "1x Runed Titanium Rod", "price": 0 }
+        {
+          "label": "4x Greater Cosmic Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -76,9 +1751,18 @@
       "item": "Scroll of Enchant Bracers - Greater Assault",
       "wowheadItemId": 44815,
       "materials": [
-        { "label": "6x Infinite Dust", "price": 0 },
-        { "label": "2x Greater Cosmic Essence", "price": 0 },
-        { "label": "1x Runed Titanium Rod", "price": 0 }
+        {
+          "label": "6x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "2x Greater Cosmic Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -86,8 +1770,508 @@
       "item": "Scroll of Enchant Shield - Greater Stamina",
       "wowheadItemId": 38861,
       "materials": [
-        { "label": "8x Greater Cosmic Essence", "price": 0 },
-        { "label": "1x Runed Titanium Rod", "price": 0 }
+        {
+          "label": "8x Greater Cosmic Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Chest - Greater Stats",
+      "wowheadItemId": 38865,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Cloak - Titanweave",
+      "wowheadItemId": 38978,
+      "materials": [
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Cloak - Shadow Armor",
+      "wowheadItemId": 38981,
+      "materials": [
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Gloves - Crusher",
+      "wowheadItemId": 44484,
+      "materials": [
+        {
+          "label": "8x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Boots - Icewalker",
+      "wowheadItemId": 44489,
+      "materials": [
+        {
+          "label": "8x Eternal Shadow",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Weapon - Black Magic",
+      "wowheadItemId": 38995,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Weapon - Accuracy",
+      "wowheadItemId": 44492,
+      "materials": [
+        {
+          "label": "8x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Weapon - Exceptional Spellpower",
+      "wowheadItemId": 38991,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Weapon - Massacre",
+      "wowheadItemId": 38997,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Ring - Spellpower",
+      "wowheadItemId": 44944,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Ring - Assault",
+      "wowheadItemId": 44945,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Ring - Stamina",
+      "wowheadItemId": 44946,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Boots - Tuskarr's Vitality",
+      "wowheadItemId": 44488,
+      "materials": [
+        {
+          "label": "8x Eternal Shadow",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Boots - Greater Assault",
+      "wowheadItemId": 44487,
+      "materials": [
+        {
+          "label": "8x Eternal Fire",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Fire",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Gloves - Exceptional Spellpower",
+      "wowheadItemId": 44483,
+      "materials": [
+        {
+          "label": "8x Eternal Fire",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Fire",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Gloves - Armsman",
+      "wowheadItemId": 44485,
+      "materials": [
+        {
+          "label": "8x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Cloak - Speed",
+      "wowheadItemId": 38984,
+      "materials": [
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Cloak - Greater Agility",
+      "wowheadItemId": 38987,
+      "materials": [
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Chest - Super Stats",
+      "wowheadItemId": 38975,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Chest - Mighty Health",
+      "wowheadItemId": 38976,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Bracers - Spellpower",
+      "wowheadItemId": 44961,
+      "materials": [
+        {
+          "label": "4x Greater Cosmic Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Bracers - Expertise",
+      "wowheadItemId": 44498,
+      "materials": [
+        {
+          "label": "8x Eternal Shadow",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Legs - Frosthide",
+      "wowheadItemId": 41600,
+      "materials": [
+        {
+          "label": "8x Eternal Water",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Legs - Icescale",
+      "wowheadItemId": 41601,
+      "materials": [
+        {
+          "label": "8x Eternal Shadow",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant Off-Hand - Superior Intellect",
+      "wowheadItemId": 44963,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Scroll of Enchant 2H Weapon - Massacre",
+      "wowheadItemId": 38998,
+      "materials": [
+        {
+          "label": "8x Abyss Crystal",
+          "price": 0
+        },
+        {
+          "label": "8x Infinite Dust",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Titanium Rod",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -97,10 +2281,22 @@
       "item": "Eternal Belt Buckle",
       "wowheadItemId": 41611,
       "materials": [
-        { "label": "4x Saronite Bar", "price": 0 },
-        { "label": "1x Eternal Earth", "price": 0 },
-        { "label": "1x Eternal Shadow", "price": 0 },
-        { "label": "1x Eternal Water", "price": 0 }
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Shadow",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Water",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -108,8 +2304,14 @@
       "item": "Titanium Weapon Chain",
       "wowheadItemId": 41976,
       "materials": [
-        { "label": "8x Saronite Bar", "price": 0 },
-        { "label": "1x Titanium Bar", "price": 0 }
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Titanium Bar",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -117,8 +2319,14 @@
       "item": "Titanium Plating",
       "wowheadItemId": 44936,
       "materials": [
-        { "label": "4x Saronite Bar", "price": 0 },
-        { "label": "1x Titanium Bar", "price": 0 }
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Titanium Bar",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -126,9 +2334,409 @@
       "item": "Spiked Titansteel Helm",
       "wowheadItemId": 41386,
       "materials": [
-        { "label": "8x Saronite Bar", "price": 0 },
-        { "label": "6x Titansteel Bar", "price": 0 },
-        { "label": "2x Frozen Orb", "price": 0 }
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "6x Titansteel Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Tempered Titansteel Helm",
+      "wowheadItemId": 41387,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "6x Titansteel Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Sunblessed Armor",
+      "wowheadItemId": 42443,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Sun Crystal",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Fire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Shield Spike",
+      "wowheadItemId": 44931,
+      "materials": [
+        {
+          "label": "4x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Titanium Bar",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Horned Helm",
+      "wowheadItemId": 41385,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "6x Titansteel Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Daunting Legplates",
+      "wowheadItemId": 41353,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Righteous Gauntlets",
+      "wowheadItemId": 41354,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Legplates",
+      "wowheadItemId": 41355,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Waistguard",
+      "wowheadItemId": 41356,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Walkers",
+      "wowheadItemId": 41357,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Air",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Gauntlets",
+      "wowheadItemId": 41358,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Fire",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Skullshield",
+      "wowheadItemId": 41359,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Shoulders",
+      "wowheadItemId": 41360,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Hauberk",
+      "wowheadItemId": 41361,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Life",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Savage Saronite Bracers",
+      "wowheadItemId": 41362,
+      "materials": [
+        {
+          "label": "6x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "2x Crystallized Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Ring of Triumph",
+      "wowheadItemId": 42642,
+      "materials": [
+        {
+          "label": "1x Titanium Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Autumn's Glow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Impact Band",
+      "wowheadItemId": 42643,
+      "materials": [
+        {
+          "label": "1x Titanium Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        },
+        {
+          "label": "1x Forest Emerald",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Earthguard Ring",
+      "wowheadItemId": 42644,
+      "materials": [
+        {
+          "label": "1x Titanium Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Monarch Topaz",
+          "price": 0
+        },
+        {
+          "label": "1x Twilight Opal",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Titanium Spellshock Ring",
+      "wowheadItemId": 42645,
+      "materials": [
+        {
+          "label": "1x Titanium Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Scarlet Ruby",
+          "price": 0
+        },
+        {
+          "label": "1x Sky Sapphire",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Plate Girdle of Righteousness",
+      "wowheadItemId": 41345,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Water",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Protective Phylactery",
+      "wowheadItemId": 42144,
+      "materials": [
+        {
+          "label": "8x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Shield of the Template",
+      "wowheadItemId": 42145,
+      "materials": [
+        {
+          "label": "12x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "4x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "2x Frozen Orb",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -138,9 +2746,18 @@
       "item": "Icescale Leg Armor",
       "wowheadItemId": 38374,
       "materials": [
-        { "label": "2x Arctic Fur", "price": 0 },
-        { "label": "2x Icy Dragonscale", "price": 0 },
-        { "label": "1x Frozen Orb", "price": 0 }
+        {
+          "label": "2x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -148,8 +2765,29 @@
       "item": "Frosthide Leg Armor",
       "wowheadItemId": 38373,
       "materials": [
-        { "label": "4x Arctic Fur", "price": 0 },
-        { "label": "1x Frozen Orb", "price": 0 }
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Earthen Leg Armor",
+      "wowheadItemId": 38371,
+      "materials": [
+        {
+          "label": "4x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Heavy Borean Leather",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -157,9 +2795,18 @@
       "item": "Drums of Forgotten Kings",
       "wowheadItemId": 49633,
       "materials": [
-        { "label": "8x Heavy Borean Leather", "price": 0 },
-        { "label": "2x Icy Dragonscale", "price": 0 },
-        { "label": "2x Eternal Life", "price": 0 }
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Life",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -167,9 +2814,412 @@
       "item": "Drums of the Wild",
       "wowheadItemId": 49634,
       "materials": [
-        { "label": "6x Heavy Borean Leather", "price": 0 },
-        { "label": "2x Icy Dragonscale", "price": 0 },
-        { "label": "1x Eternal Life", "price": 0 }
+        {
+          "label": "6x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "1x Eternal Life",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fur Lining - Attack Power",
+      "wowheadItemId": 50965,
+      "materials": [
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "1x Heavy Borean Leather",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fur Lining - Spell Power",
+      "wowheadItemId": 50966,
+      "materials": [
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "1x Heavy Borean Leather",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fur Lining - Stamina",
+      "wowheadItemId": 50967,
+      "materials": [
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "1x Heavy Borean Leather",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fur Lining - Nature Resist",
+      "wowheadItemId": 50968,
+      "materials": [
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "1x Heavy Borean Leather",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fur Lining - Frost Resist",
+      "wowheadItemId": 50969,
+      "materials": [
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "1x Heavy Borean Leather",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Fur Lining - Shadow Resist",
+      "wowheadItemId": 50970,
+      "materials": [
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "1x Heavy Borean Leather",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Black Chitin Bracers",
+      "wowheadItemId": 50964,
+      "materials": [
+        {
+          "label": "4x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Dark Arctic Leggings",
+      "wowheadItemId": 50971,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Dark Arctic Chestpiece",
+      "wowheadItemId": 50972,
+      "materials": [
+        {
+          "label": "12x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Overcast Bracers",
+      "wowheadItemId": 50973,
+      "materials": [
+        {
+          "label": "4x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Overcast Handwraps",
+      "wowheadItemId": 50974,
+      "materials": [
+        {
+          "label": "6x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Overcast Leggings",
+      "wowheadItemId": 50975,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Life",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Overcast Chestguard",
+      "wowheadItemId": 50976,
+      "materials": [
+        {
+          "label": "12x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Air",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stormhide Belt",
+      "wowheadItemId": 50977,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stormhide Leggings",
+      "wowheadItemId": 50978,
+      "materials": [
+        {
+          "label": "10x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Stormhide Hauberk",
+      "wowheadItemId": 50979,
+      "materials": [
+        {
+          "label": "12x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Polar Vest",
+      "wowheadItemId": 50980,
+      "materials": [
+        {
+          "label": "12x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Polar Cord",
+      "wowheadItemId": 50981,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Polar Leggings",
+      "wowheadItemId": 50982,
+      "materials": [
+        {
+          "label": "10x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Arctic Fur",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Iceborne Belt",
+      "wowheadItemId": 50983,
+      "materials": [
+        {
+          "label": "8x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "2x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Iceborne Leggings",
+      "wowheadItemId": 50984,
+      "materials": [
+        {
+          "label": "10x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Iceborne Chestguard",
+      "wowheadItemId": 50985,
+      "materials": [
+        {
+          "label": "12x Heavy Borean Leather",
+          "price": 0
+        },
+        {
+          "label": "4x Icy Dragonscale",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -179,8 +3229,14 @@
       "item": "Frostweave Bag",
       "wowheadItemId": 41599,
       "materials": [
-        { "label": "6x Frostweave Cloth", "price": 0 },
-        { "label": "1x Infinite Dust", "price": 0 }
+        {
+          "label": "6x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -188,9 +3244,18 @@
       "item": "Brilliant Spellthread",
       "wowheadItemId": 41602,
       "materials": [
-        { "label": "4x Eternal Life", "price": 0 },
-        { "label": "4x Iceweb Spider Silk", "price": 0 },
-        { "label": "1x Frozen Orb", "price": 0 }
+        {
+          "label": "4x Eternal Life",
+          "price": 0
+        },
+        {
+          "label": "4x Iceweb Spider Silk",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -198,9 +3263,516 @@
       "item": "Sapphire Spellthread",
       "wowheadItemId": 41604,
       "materials": [
-        { "label": "4x Eternal Fire", "price": 0 },
-        { "label": "4x Iceweb Spider Silk", "price": 0 },
-        { "label": "1x Frozen Orb", "price": 0 }
+        {
+          "label": "4x Eternal Fire",
+          "price": 0
+        },
+        {
+          "label": "4x Iceweb Spider Silk",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mysterious Bag",
+      "wowheadItemId": 41609,
+      "materials": [
+        {
+          "label": "12x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Eternium Thread",
+          "price": 0
+        },
+        {
+          "label": "1x Abyss Crystal",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glacial Bag",
+      "wowheadItemId": 41610,
+      "materials": [
+        {
+          "label": "10x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Eternium Thread",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostweave Robe",
+      "wowheadItemId": 41593,
+      "materials": [
+        {
+          "label": "8x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostweave Tunic",
+      "wowheadItemId": 41594,
+      "materials": [
+        {
+          "label": "8x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bolt of Ebonweave",
+      "wowheadItemId": 41595,
+      "materials": [
+        {
+          "label": "4x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Shadowweave",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Bolt of Spellweave",
+      "wowheadItemId": 41596,
+      "materials": [
+        {
+          "label": "4x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Spellweave",
+          "price": 0
+        },
+        {
+          "label": "1x Runed Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Shoulders",
+      "wowheadItemId": 41584,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Robe",
+      "wowheadItemId": 41585,
+      "materials": [
+        {
+          "label": "6x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Leggings",
+      "wowheadItemId": 41586,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Boots",
+      "wowheadItemId": 41587,
+      "materials": [
+        {
+          "label": "4x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Cowl",
+      "wowheadItemId": 41588,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Gloves",
+      "wowheadItemId": 41589,
+      "materials": [
+        {
+          "label": "4x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Belt",
+      "wowheadItemId": 41590,
+      "materials": [
+        {
+          "label": "4x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostwoven Wristwraps",
+      "wowheadItemId": 41591,
+      "materials": [
+        {
+          "label": "4x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Belt",
+      "wowheadItemId": 41592,
+      "materials": [
+        {
+          "label": "6x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Leggings",
+      "wowheadItemId": 41597,
+      "materials": [
+        {
+          "label": "8x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Robe",
+      "wowheadItemId": 41611,
+      "materials": [
+        {
+          "label": "8x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Gloves",
+      "wowheadItemId": 41612,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Cowl",
+      "wowheadItemId": 41605,
+      "materials": [
+        {
+          "label": "6x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Shoulders",
+      "wowheadItemId": 41606,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Boots",
+      "wowheadItemId": 41607,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Duskweave Wristwraps",
+      "wowheadItemId": 41608,
+      "materials": [
+        {
+          "label": "5x Frostweave Cloth",
+          "price": 0
+        },
+        {
+          "label": "2x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Belt",
+      "wowheadItemId": 41984,
+      "materials": [
+        {
+          "label": "6x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Leggings",
+      "wowheadItemId": 41985,
+      "materials": [
+        {
+          "label": "8x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Robe",
+      "wowheadItemId": 41986,
+      "materials": [
+        {
+          "label": "8x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Life",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Cowl",
+      "wowheadItemId": 41987,
+      "materials": [
+        {
+          "label": "6x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Water",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Shoulders",
+      "wowheadItemId": 41988,
+      "materials": [
+        {
+          "label": "6x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Air",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Boots",
+      "wowheadItemId": 41989,
+      "materials": [
+        {
+          "label": "6x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Gloves",
+      "wowheadItemId": 41990,
+      "materials": [
+        {
+          "label": "5x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Fire",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Frostsavage Wristwraps",
+      "wowheadItemId": 41991,
+      "materials": [
+        {
+          "label": "5x Bolt of Frostweave",
+          "price": 0
+        },
+        {
+          "label": "2x Eternal Shadow",
+          "price": 0
+        },
+        {
+          "label": "1x Frozen Orb",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -210,9 +3782,18 @@
       "item": "Flask of the Frost Wyrm",
       "wowheadItemId": 46376,
       "materials": [
-        { "label": "1x Frost Lotus", "price": 0 },
-        { "label": "7x Ice Thorn", "price": 0 },
-        { "label": "1x Crystal Vial", "price": 0 }
+        {
+          "label": "1x Frost Lotus",
+          "price": 0
+        },
+        {
+          "label": "7x Ice Thorn",
+          "price": 0
+        },
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -220,9 +3801,56 @@
       "item": "Flask of Endless Rage",
       "wowheadItemId": 46377,
       "materials": [
-        { "label": "1x Frost Lotus", "price": 0 },
-        { "label": "7x Lichbloom", "price": 0 },
-        { "label": "1x Crystal Vial", "price": 0 }
+        {
+          "label": "1x Frost Lotus",
+          "price": 0
+        },
+        {
+          "label": "7x Lichbloom",
+          "price": 0
+        },
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Flask of Stoneblood",
+      "wowheadItemId": 46379,
+      "materials": [
+        {
+          "label": "1x Frost Lotus",
+          "price": 0
+        },
+        {
+          "label": "7x Icethorn",
+          "price": 0
+        },
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Flask of Pure Mojo",
+      "wowheadItemId": 46378,
+      "materials": [
+        {
+          "label": "1x Frost Lotus",
+          "price": 0
+        },
+        {
+          "label": "7x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -230,9 +3858,525 @@
       "item": "Potion of Speed",
       "wowheadItemId": 40211,
       "materials": [
-        { "label": "1x Imbued Vial", "price": 0 },
-        { "label": "2x Adder's Tongue", "price": 0 },
-        { "label": "1x Pygmy Oil", "price": 0 }
+        {
+          "label": "1x Imbued Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Adder's Tongue",
+          "price": 0
+        },
+        {
+          "label": "1x Pygmy Oil",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Potion of Wild Magic",
+      "wowheadItemId": 40212,
+      "materials": [
+        {
+          "label": "1x Imbued Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Deadnettle",
+          "price": 0
+        },
+        {
+          "label": "1x Pygmy Oil",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Indestructible Potion",
+      "wowheadItemId": 40093,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "1x Lichbloom",
+          "price": 0
+        },
+        {
+          "label": "1x Icethorn",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Potion of Nightmares",
+      "wowheadItemId": 40078,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "1x Dreamleaf",
+          "price": 0
+        },
+        {
+          "label": "1x Golden Lotus",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Titanium",
+      "wowheadItemId": 44958,
+      "materials": [
+        {
+          "label": "1x Saronite Bar",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Air",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Shadow",
+          "price": 0
+        },
+        {
+          "label": "1x Crystallized Water",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Eternal Earth",
+      "wowheadItemId": 53830,
+      "materials": [
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Eternal Shadow",
+      "wowheadItemId": 53831,
+      "materials": [
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Eternal Air",
+      "wowheadItemId": 53832,
+      "materials": [
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Eternal Water",
+      "wowheadItemId": 53833,
+      "materials": [
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Eternal Fire",
+      "wowheadItemId": 53834,
+      "materials": [
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Eternal Life",
+      "wowheadItemId": 53835,
+      "materials": [
+        {
+          "label": "1x Infinite Dust",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Mighty Agility",
+      "wowheadItemId": 40078,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Adder's Tongue",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Mighty Strength",
+      "wowheadItemId": 40079,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Deadnettle",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Mighty Mageblood",
+      "wowheadItemId": 40081,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Mighty Fortitude",
+      "wowheadItemId": 40082,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Expertise",
+      "wowheadItemId": 44332,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Armor Piercing",
+      "wowheadItemId": 44331,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Deadnettle",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Lightning Speed",
+      "wowheadItemId": 40084,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Adder's Tongue",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Elixir of Accuracy",
+      "wowheadItemId": 40072,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Deadnettle",
+          "price": 0
+        },
+        {
+          "label": "1x Tiger Lily",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Runic Mana Potion",
+      "wowheadItemId": 33448,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Lichbloom",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Runic Healing Potion",
+      "wowheadItemId": 33447,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "2x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Icethorn",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Potion of Mana Restoration",
+      "wowheadItemId": 40067,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "1x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Lichbloom",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Resurgent Healing Potion",
+      "wowheadItemId": 40077,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "1x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Icethorn",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Potion of Spirit",
+      "wowheadItemId": 40097,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "1x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Lichbloom",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Earthen Potion",
+      "wowheadItemId": 40087,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "1x Goldclover",
+          "price": 0
+        },
+        {
+          "label": "1x Icethorn",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Potion of the Tol'vir",
+      "wowheadItemId": 40070,
+      "materials": [
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        },
+        {
+          "label": "1x Whiptail",
+          "price": 0
+        },
+        {
+          "label": "1x Cinderbloom",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Earth to Water",
+      "wowheadItemId": 17559,
+      "materials": [
+        {
+          "label": "1x Elemental Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Water to Air",
+      "wowheadItemId": 17560,
+      "materials": [
+        {
+          "label": "1x Elemental Water",
+          "price": 0
+        },
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Undeath to Water",
+      "wowheadItemId": 17561,
+      "materials": [
+        {
+          "label": "1x Undeath Essence",
+          "price": 0
+        },
+        {
+          "label": "1x Crystal Vial",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Transmute: Primal Might",
+      "wowheadItemId": 32765,
+      "materials": [
+        {
+          "label": "1x Primal Fire",
+          "price": 0
+        },
+        {
+          "label": "1x Primal Earth",
+          "price": 0
+        },
+        {
+          "label": "1x Primal Water",
+          "price": 0
+        },
+        {
+          "label": "1x Primal Air",
+          "price": 0
+        },
+        {
+          "label": "1x Primal Shadow",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -242,9 +4386,18 @@
       "item": "Glyph of Death Coil",
       "wowheadItemId": 42457,
       "materials": [
-        { "label": "1x Ink of the Sea", "price": 0 },
-        { "label": "1x Snowfall Ink", "price": 0 },
-        { "label": "1x Light Parchment", "price": 0 }
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -252,9 +4405,18 @@
       "item": "Glyph of Psychic Scream",
       "wowheadItemId": 42410,
       "materials": [
-        { "label": "1x Ink of the Sea", "price": 0 },
-        { "label": "1x Snowfall Ink", "price": 0 },
-        { "label": "1x Light Parchment", "price": 0 }
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -262,9 +4424,1557 @@
       "item": "Glyph of Execution",
       "wowheadItemId": 43416,
       "materials": [
-        { "label": "1x Ink of the Sea", "price": 0 },
-        { "label": "1x Snowfall Ink", "price": 0 },
-        { "label": "1x Light Parchment", "price": 0 }
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Scourge Strike",
+      "wowheadItemId": 43534,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Obliterate",
+      "wowheadItemId": 43535,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Icy Touch",
+      "wowheadItemId": 43536,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Howling Blast",
+      "wowheadItemId": 43537,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Frost Strike",
+      "wowheadItemId": 43538,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Unholy Blight",
+      "wowheadItemId": 43539,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Blood Strike",
+      "wowheadItemId": 43541,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Rune Strike",
+      "wowheadItemId": 43542,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Death Strike",
+      "wowheadItemId": 43543,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Holy Light",
+      "wowheadItemId": 45736,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Seal of Righteousness",
+      "wowheadItemId": 45737,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Flash Heal",
+      "wowheadItemId": 42400,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Power Word: Shield",
+      "wowheadItemId": 42401,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Renew",
+      "wowheadItemId": 42402,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Shadow Word: Death",
+      "wowheadItemId": 42403,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Starfire",
+      "wowheadItemId": 40920,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Rejuvenation",
+      "wowheadItemId": 40921,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Wrath",
+      "wowheadItemId": 40922,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Moonfire",
+      "wowheadItemId": 40923,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Kill Shot",
+      "wowheadItemId": 42897,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Steady Shot",
+      "wowheadItemId": 42898,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Arcane Shot",
+      "wowheadItemId": 42899,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Fireball",
+      "wowheadItemId": 42734,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Frostbolt",
+      "wowheadItemId": 42735,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Pyroblast",
+      "wowheadItemId": 42736,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Shadowbolt",
+      "wowheadItemId": 42408,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Incinerate",
+      "wowheadItemId": 42409,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Sinister Strike",
+      "wowheadItemId": 42954,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Eviscerate",
+      "wowheadItemId": 42955,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Shield Slam",
+      "wowheadItemId": 43417,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Devastate",
+      "wowheadItemId": 43418,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Revenge",
+      "wowheadItemId": 43419,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Lightning Bolt",
+      "wowheadItemId": 41517,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Chain Lightning",
+      "wowheadItemId": 41518,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Earth Shield",
+      "wowheadItemId": 41524,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Stormstrike",
+      "wowheadItemId": 41526,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Lava Lash",
+      "wowheadItemId": 41529,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Hammer of Wrath",
+      "wowheadItemId": 41102,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Divine Plea",
+      "wowheadItemId": 41103,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Seal of Vengeance",
+      "wowheadItemId": 41104,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Judgement",
+      "wowheadItemId": 41105,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Consecration",
+      "wowheadItemId": 41106,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Crusader Strike",
+      "wowheadItemId": 41107,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Mind Flay",
+      "wowheadItemId": 42404,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Shadow Word: Pain",
+      "wowheadItemId": 42405,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Dispel Magic",
+      "wowheadItemId": 42406,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Prayer of Healing",
+      "wowheadItemId": 42407,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Regrowth",
+      "wowheadItemId": 40915,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Insect Swarm",
+      "wowheadItemId": 40916,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Lifebloom",
+      "wowheadItemId": 40917,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Swiftmend",
+      "wowheadItemId": 40918,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Nourish",
+      "wowheadItemId": 40919,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Multi-Shot",
+      "wowheadItemId": 42895,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Serpent Sting",
+      "wowheadItemId": 42896,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Explosive Shot",
+      "wowheadItemId": 42900,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Aimed Shot",
+      "wowheadItemId": 42901,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Scatter Shot",
+      "wowheadItemId": 42902,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Ice Lance",
+      "wowheadItemId": 42737,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Ice Barrier",
+      "wowheadItemId": 42738,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Living Bomb",
+      "wowheadItemId": 42739,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Molten Armor",
+      "wowheadItemId": 42740,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Water Elemental",
+      "wowheadItemId": 42741,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Haunt",
+      "wowheadItemId": 42411,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Immolate",
+      "wowheadItemId": 42412,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Corruption",
+      "wowheadItemId": 42413,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Unstable Affliction",
+      "wowheadItemId": 42414,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Mutilate",
+      "wowheadItemId": 42956,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Rupture",
+      "wowheadItemId": 42957,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Backstab",
+      "wowheadItemId": 42958,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Hemorrhage",
+      "wowheadItemId": 42959,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Shield Block",
+      "wowheadItemId": 43420,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Block",
+      "wowheadItemId": 43421,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Victory Rush",
+      "wowheadItemId": 43422,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Mortal Strike",
+      "wowheadItemId": 43423,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Riptide",
+      "wowheadItemId": 41527,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Lesser Healing Wave",
+      "wowheadItemId": 41530,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Chain Heal",
+      "wowheadItemId": 41531,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Healing Wave",
+      "wowheadItemId": 41532,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Bloodlust",
+      "wowheadItemId": 43331,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Hex",
+      "wowheadItemId": 43332,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Glyph of Frost Shock",
+      "wowheadItemId": 43334,
+      "materials": [
+        {
+          "label": "1x Ink of the Sea",
+          "price": 0
+        },
+        {
+          "label": "1x Snowfall Ink",
+          "price": 0
+        },
+        {
+          "label": "1x Light Parchment",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }
@@ -274,10 +5984,22 @@
       "item": "Fish Feast",
       "wowheadItemId": 43015,
       "materials": [
-        { "label": "2x Musselback Sculpin", "price": 0 },
-        { "label": "2x Glacial Salmon", "price": 0 },
-        { "label": "2x Nettlefish", "price": 0 },
-        { "label": "1x Northern Spices", "price": 0 }
+        {
+          "label": "2x Musselback Sculpin",
+          "price": 0
+        },
+        {
+          "label": "2x Glacial Salmon",
+          "price": 0
+        },
+        {
+          "label": "2x Nettlefish",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -285,8 +6007,14 @@
       "item": "Dragonfin Filet",
       "wowheadItemId": 43000,
       "materials": [
-        { "label": "1x Dragonfin Angelfish", "price": 0 },
-        { "label": "1x Northern Spices", "price": 0 }
+        {
+          "label": "1x Dragonfin Angelfish",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     },
@@ -294,11 +6022,389 @@
       "item": "Great Feast",
       "wowheadItemId": 34753,
       "materials": [
-        { "label": "1x Chunk o' Mammoth", "price": 0 },
-        { "label": "1x Shoveltusk Flank", "price": 0 },
-        { "label": "1x Worm Meat", "price": 0 },
-        { "label": "1x Chilled Meat", "price": 0 },
-        { "label": "1x Northern Spices", "price": 0 }
+        {
+          "label": "1x Chunk o' Mammoth",
+          "price": 0
+        },
+        {
+          "label": "1x Shoveltusk Flank",
+          "price": 0
+        },
+        {
+          "label": "1x Worm Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Chilled Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Tender Shoveltusk Steak",
+      "wowheadItemId": 43001,
+      "materials": [
+        {
+          "label": "1x Shoveltusk Flank",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Smoked Rockfin",
+      "wowheadItemId": 43004,
+      "materials": [
+        {
+          "label": "1x Rockfin Grouper",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Snapper Extreme",
+      "wowheadItemId": 43005,
+      "materials": [
+        {
+          "label": "1x Nettlefish",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Blackened Dragonfin",
+      "wowheadItemId": 43011,
+      "materials": [
+        {
+          "label": "1x Dragonfin Angelfish",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Spiced Mammoth Treats",
+      "wowheadItemId": 43012,
+      "materials": [
+        {
+          "label": "1x Chunk o' Mammoth",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Worm Delight",
+      "wowheadItemId": 43013,
+      "materials": [
+        {
+          "label": "1x Worm Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Imperial Manta Steak",
+      "wowheadItemId": 43014,
+      "materials": [
+        {
+          "label": "1x Imperial Manta Ray",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mega Mammoth Meal",
+      "wowheadItemId": 43016,
+      "materials": [
+        {
+          "label": "1x Chunk o' Mammoth",
+          "price": 0
+        },
+        {
+          "label": "1x Shoveltusk Flank",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Spiced Worm Burger",
+      "wowheadItemId": 43017,
+      "materials": [
+        {
+          "label": "1x Worm Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Chilled Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Cuttlesteak",
+      "wowheadItemId": 43018,
+      "materials": [
+        {
+          "label": "1x Giant Darkwater Cuttlefish",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Shoveltusk Steak",
+      "wowheadItemId": 34754,
+      "materials": [
+        {
+          "label": "1x Shoveltusk Flank",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Rhino Dogs",
+      "wowheadItemId": 34755,
+      "materials": [
+        {
+          "label": "1x Rhino Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Poached Northern Sculpin",
+      "wowheadItemId": 34756,
+      "materials": [
+        {
+          "label": "1x Northern Sculpin",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Baked Manta Ray",
+      "wowheadItemId": 43019,
+      "materials": [
+        {
+          "label": "1x Manta Ray",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Hearty Rhino",
+      "wowheadItemId": 43020,
+      "materials": [
+        {
+          "label": "1x Rhino Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Last Week's Mammoth",
+      "wowheadItemId": 43021,
+      "materials": [
+        {
+          "label": "1x Chunk o' Mammoth",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Mighty Rhino Dogs",
+      "wowheadItemId": 43022,
+      "materials": [
+        {
+          "label": "2x Rhino Meat",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Poached Northern Sculpin",
+      "wowheadItemId": 34757,
+      "materials": [
+        {
+          "label": "1x Northern Sculpin",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Smoked Salmon",
+      "wowheadItemId": 34758,
+      "materials": [
+        {
+          "label": "1x Glacial Salmon",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Grilled Sculpin",
+      "wowheadItemId": 34759,
+      "materials": [
+        {
+          "label": "1x Musselback Sculpin",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Slow-Roasted Turkey",
+      "wowheadItemId": 34760,
+      "materials": [
+        {
+          "label": "1x Turkey",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Very Burnt Worg",
+      "wowheadItemId": 34762,
+      "materials": [
+        {
+          "label": "1x Worg Haunch",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Worg Tartare",
+      "wowheadItemId": 34763,
+      "materials": [
+        {
+          "label": "1x Worg Haunch",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Crispy Bat Wing",
+      "wowheadItemId": 33454,
+      "materials": [
+        {
+          "label": "1x Bat Wing",
+          "price": 0
+        }
+      ],
+      "sellingPrice": 0
+    },
+    {
+      "item": "Spicy Fried Herring",
+      "wowheadItemId": 33452,
+      "materials": [
+        {
+          "label": "1x Barrelhead Goby",
+          "price": 0
+        },
+        {
+          "label": "1x Northern Spices",
+          "price": 0
+        }
       ],
       "sellingPrice": 0
     }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professions Profit Calculator – Warmane Onyxia</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
   <aside class="side-panel" id="side-panel" aria-label="Professions and crafters">
@@ -43,6 +44,7 @@
     <p class="subtitle">Warmane – Onyxia</p>
     <nav class="top-level-nav" aria-label="Main sections">
       <button type="button" class="top-nav-btn active" data-view="professions">Professions</button>
+      <button type="button" class="top-nav-btn" data-view="prospecting">Prospecting</button>
       <button type="button" class="top-nav-btn" data-view="selling-tips">Selling Tips</button>
     </nav>
     <section class="crafter-form-section" aria-label="Add your crafter">
@@ -246,6 +248,35 @@
       </div>
     </section>
   </main>
+  </div>
+
+  <div id="view-prospecting" class="view-panel" hidden>
+    <main class="prospecting-content max-w-2xl mx-auto px-4 py-6">
+      <h2 class="text-xl font-semibold text-amber-500 mb-4">Titanium Ore Prospecting Profitability</h2>
+      <p class="text-sm text-gray-400 mb-6">WotLK yields per 5 ore: 25% epic, 100% rare (avg 1), 0.75 titanium powder, 1.5 uncommon (vendor 1g).</p>
+      <div class="grid gap-4 sm:grid-cols-2 mb-6">
+        <label class="block">
+          <span class="text-gray-400 text-sm">Price per stack (20 ore), g</span>
+          <input type="number" id="prospecting-stack" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Dragon's Eye price, g</span>
+          <input type="number" id="prospecting-dragonseye" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Avg raw Epic Gem price, g</span>
+          <input type="number" id="prospecting-epic" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Avg Rare Gem price, g</span>
+          <input type="number" id="prospecting-rare" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+      </div>
+      <div id="prospecting-results" class="rounded-lg border border-gray-600 bg-gray-800/50 p-4 space-y-2">
+        <p class="text-gray-400">Enter prices above to see profit and break-even.</p>
+      </div>
+      <p class="text-xs text-gray-500 mt-4">Powder value = (Dragon's Eye / 10) × 0.75. Uncommon gems valued at 1g each.</p>
+    </main>
   </div>
 
   <div id="view-selling-tips" class="view-panel" hidden>

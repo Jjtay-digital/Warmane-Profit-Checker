@@ -319,19 +319,56 @@
 
   function initTopNav() {
     const viewProfessions = document.getElementById('view-professions');
+    const viewProspecting = document.getElementById('view-prospecting');
     const viewSellingTips = document.getElementById('view-selling-tips');
     const btns = document.querySelectorAll('.top-nav-btn');
-    if (!viewProfessions || !viewSellingTips || !btns.length) return;
+    if (!viewProfessions || !btns.length) return;
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var view = btn.getAttribute('data-view');
         btns.forEach(function (b) { b.classList.toggle('active', b === btn); });
         viewProfessions.hidden = view !== 'professions';
-        viewSellingTips.hidden = view !== 'selling-tips';
+        if (viewProspecting) viewProspecting.hidden = view !== 'prospecting';
+        if (viewSellingTips) viewSellingTips.hidden = view !== 'selling-tips';
       });
     });
   }
   initTopNav();
+
+  function initProspectingCalc() {
+    var stackInp = document.getElementById('prospecting-stack');
+    var eyeInp = document.getElementById('prospecting-dragonseye');
+    var epicInp = document.getElementById('prospecting-epic');
+    var rareInp = document.getElementById('prospecting-rare');
+    var resultsEl = document.getElementById('prospecting-results');
+    if (!stackInp || !eyeInp || !epicInp || !rareInp || !resultsEl) return;
+    function parse(val) { var n = Number(val); return isNaN(n) ? 0 : n; }
+    function update() {
+      var pricePerStack = parse(stackInp.value);
+      var priceDragonsEye = parse(eyeInp.value);
+      var priceEpicGem = parse(epicInp.value);
+      var priceRareGem = parse(rareInp.value);
+      var costPerProspect = pricePerStack / 4;
+      var powderValue = (priceDragonsEye / 10) * 0.75;
+      var revenuePerProspect = (0.25 * priceEpicGem) + (1.0 * priceRareGem) + powderValue + (1.5 * 1);
+      var profitPerProspect = revenuePerProspect - costPerProspect;
+      var profitPerStack = profitPerProspect * 4;
+      var breakEvenRevenue = (0.25 * priceEpicGem) + (1.0 * priceRareGem) + powderValue + (1.5 * 1);
+      var breakEvenStack = breakEvenRevenue * 4;
+      var breakEvenPerOre = breakEvenStack / 20;
+      var positive = profitPerStack >= 0;
+      resultsEl.innerHTML =
+        '<p class="' + (positive ? 'text-green-400' : 'text-red-400') + ' font-semibold">Profit per stack (20 ore): ' + profitPerStack.toFixed(1) + 'g</p>' +
+        '<p class="' + (positive ? 'text-green-400' : 'text-red-400') + ' font-semibold">Profit per 5 ore: ' + profitPerProspect.toFixed(1) + 'g</p>' +
+        '<p class="text-gray-300 mt-2">Break-even ore price: <span class="text-amber-400">' + breakEvenPerOre.toFixed(1) + 'g</span> per ore (stack = ' + breakEvenStack.toFixed(1) + 'g)</p>';
+    }
+    [stackInp, eyeInp, epicInp, rareInp].forEach(function (inp) {
+      inp.addEventListener('input', update);
+      inp.addEventListener('change', update);
+    });
+    update();
+  }
+  initProspectingCalc();
 
   function renderSidePanel() {
     var list = document.getElementById('side-panel-list');
