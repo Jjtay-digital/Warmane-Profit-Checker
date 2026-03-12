@@ -286,11 +286,13 @@
       })
       .then(function (data) {
         applyData(data);
+        if (window.applyProfessionSearchFilter) window.applyProfessionSearchFilter();
         loadWowheadTooltips();
       })
       .catch(function (err) {
         console.warn('Using fallback data:', err.message);
         applyData(FALLBACK_DATA);
+        if (window.applyProfessionSearchFilter) window.applyProfessionSearchFilter();
         loadWowheadTooltips();
       });
   }
@@ -312,10 +314,57 @@
           panel.classList.toggle('is-visible', isMatch);
           panel.hidden = !isMatch;
         });
+        if (window.applyProfessionSearchFilter) window.applyProfessionSearchFilter();
       });
     });
   }
   initTabs();
+
+  function applyProfessionSearchFilter() {
+    var input = document.getElementById('profession-search-input');
+    var panel = document.querySelector('.profession-section.is-visible');
+    if (!input || !panel) return;
+    var tbody = panel.querySelector('tbody');
+    if (!tbody) return;
+    var q = (input.value || '').trim().toLowerCase();
+    tbody.querySelectorAll('tr').forEach(function (tr) {
+      var itemCell = tr.querySelector('.item-cell');
+      var itemText = itemCell ? itemCell.textContent : '';
+      var match = !q || itemText.toLowerCase().indexOf(q) !== -1;
+      tr.classList.toggle('filtered-out', !match);
+    });
+  }
+
+  function initProfessionSearch() {
+    var input = document.getElementById('profession-search-input');
+    var clearBtn = document.getElementById('profession-search-clear');
+    if (!input) return;
+    window.applyProfessionSearchFilter = applyProfessionSearchFilter;
+    input.addEventListener('input', applyProfessionSearchFilter);
+    input.addEventListener('change', applyProfessionSearchFilter);
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function () {
+        input.value = '';
+        input.focus();
+        applyProfessionSearchFilter();
+      });
+    }
+  }
+  initProfessionSearch();
+
+  function initScrollToTop() {
+    var btn = document.getElementById('scroll-to-top');
+    if (!btn) return;
+    function updateVisibility() {
+      btn.hidden = window.scrollY < 400;
+    }
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    updateVisibility();
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+  initScrollToTop();
 
   function initTopNav() {
     const viewProfessions = document.getElementById('view-professions');

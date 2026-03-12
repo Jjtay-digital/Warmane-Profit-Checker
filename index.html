@@ -85,6 +85,12 @@
     <button type="button" id="tab-cooking" class="tab-btn" role="tab" aria-selected="false" data-profession="cooking">Cooking</button>
   </nav>
 
+  <div class="profession-search-bar">
+    <label for="profession-search-input" class="profession-search-label">Search recipes</label>
+    <input type="search" id="profession-search-input" class="profession-search-input" placeholder="Filter by item name…" aria-label="Search recipes in current profession">
+    <button type="button" id="profession-search-clear" class="profession-search-clear" title="Clear search" aria-label="Clear search">Clear</button>
+  </div>
+
   <main class="main-content">
     <section id="engineering" class="profession-section is-visible" role="tabpanel" aria-labelledby="tab-engineering">
       <div class="table-wrapper">
@@ -324,6 +330,8 @@
       </article>
     </main>
   </div>
+
+  <button type="button" id="scroll-to-top" class="scroll-to-top" aria-label="Scroll back to top" title="Back to top" hidden>↑</button>
 
   <script src="js/main.js"></script>
 </body>
