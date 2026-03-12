@@ -419,6 +419,67 @@
   }
   initProspectingCalc();
 
+  function initSaroniteCalc() {
+    var stackInp = document.getElementById('saronite-stack');
+    var rareIds = ['saronite-rare-scarlet', 'saronite-rare-sky', 'saronite-rare-autumn', 'saronite-rare-monarch', 'saronite-rare-twilight', 'saronite-rare-forest'];
+    var dustInp = document.getElementById('saronite-dust');
+    var essenceInp = document.getElementById('saronite-essence');
+    var uncommonPriceInp = document.getElementById('saronite-uncommon-price');
+    var craftCostInp = document.getElementById('saronite-craft-cost');
+    var resultsEl = document.getElementById('saronite-results');
+    var modeRaw = document.querySelector('input[name="saronite-uncommon-mode"][value="raw"]');
+    if (!stackInp || !dustInp || !essenceInp || !resultsEl) return;
+    function parse(val) { var n = Number(val); return isNaN(n) ? 0 : n; }
+    function getRarePrices() {
+      return rareIds.map(function (id) { return parse(document.getElementById(id) && document.getElementById(id).value); });
+    }
+    function update() {
+      var pricePerStack = parse(stackInp.value);
+      var prices = getRarePrices();
+      var dustPrice = parse(dustInp.value);
+      var essencePrice = parse(essenceInp.value);
+      var avgUncommon = parse(uncommonPriceInp && uncommonPriceInp.value);
+      var craftCost = parse(craftCostInp && craftCostInp.value);
+      var shuffle = modeRaw && !modeRaw.checked;
+      var prospectsPerStack = 4;
+      var rareChancePerColor = 0.03;
+      var rarePerStackPerColor = prospectsPerStack * rareChancePerColor;
+      var rareRevenue = rarePerStackPerColor * (prices[0] + prices[1] + prices[2] + prices[3] + prices[4] + prices[5]);
+      var scarletContribution = rarePerStackPerColor * prices[0];
+      var uncommonPerStack = prospectsPerStack * 2.0;
+      var uncommonRevenue;
+      if (shuffle) {
+        var valuePerDe = (1.5 * dustPrice) + (0.25 * essencePrice) - craftCost;
+        uncommonRevenue = uncommonPerStack * valuePerDe;
+      } else {
+        uncommonRevenue = uncommonPerStack * avgUncommon;
+      }
+      var totalRevenue = rareRevenue + uncommonRevenue;
+      var netProfit = totalRevenue - pricePerStack;
+      var positive = netProfit >= 0;
+      var scarletHtml = '<p class="text-amber-400/95 text-sm mt-1">Scarlet Ruby (red) contribution: ' + scarletContribution.toFixed(1) + 'g per stack</p>';
+      resultsEl.innerHTML =
+        '<p class="font-semibold text-gray-200">Total expected revenue per stack: ' + totalRevenue.toFixed(1) + 'g</p>' +
+        '<p class="text-gray-400">Cost of ore (20 Saronite): ' + pricePerStack.toFixed(1) + 'g</p>' +
+        '<p class="' + (positive ? 'text-green-400' : 'text-red-400') + ' font-semibold">Net profit per stack: ' + netProfit.toFixed(1) + 'g</p>' +
+        scarletHtml;
+    }
+    rareIds.forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) { el.addEventListener('input', update); el.addEventListener('change', update); }
+    });
+    [stackInp, dustInp, essenceInp].forEach(function (inp) {
+      if (inp) { inp.addEventListener('input', update); inp.addEventListener('change', update); }
+    });
+    if (uncommonPriceInp) { uncommonPriceInp.addEventListener('input', update); uncommonPriceInp.addEventListener('change', update); }
+    if (craftCostInp) { craftCostInp.addEventListener('input', update); craftCostInp.addEventListener('change', update); }
+    document.querySelectorAll('input[name="saronite-uncommon-mode"]').forEach(function (radio) {
+      radio.addEventListener('change', update);
+    });
+    update();
+  }
+  initSaroniteCalc();
+
   function renderSidePanel() {
     var list = document.getElementById('side-panel-list');
     if (!list) return;

@@ -282,6 +282,87 @@
         <p class="text-gray-400">Enter prices above to see profit and break-even.</p>
       </div>
       <p class="text-xs text-gray-500 mt-4">Powder value = (Dragon's Eye / 10) × 0.75. Uncommon gems valued at 1g each.</p>
+
+      <hr class="my-8 border-gray-600">
+
+      <h2 class="text-xl font-semibold text-amber-500 mb-2 mt-8">Saronite Prospecting &amp; Shuffle Calculator</h2>
+      <p class="text-sm text-gray-400 mb-4">WotLK: 20 Saronite = 4 prospects. Per prospect: 18% rare (3% per color), 2.0 uncommon gems. Toggle shuffle to value greens via DE (1.5 Dust + 0.25 Essence per item).</p>
+
+      <div class="grid gap-4 sm:grid-cols-2 mb-4">
+        <label class="block">
+          <span class="text-gray-400 text-sm">Price per stack (20 Saronite Ore), g</span>
+          <input type="number" id="saronite-stack" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+      </div>
+
+      <p class="text-amber-400/90 text-sm font-medium mt-4 mb-2">Rare gem prices (g each) — Scarlet Ruby is the main profit driver</p>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 mb-4">
+        <label class="block">
+          <span class="text-gray-400 text-sm">Scarlet Ruby <span class="text-amber-400">(red)</span></span>
+          <input type="number" id="saronite-rare-scarlet" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-amber-600/50 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Sky Sapphire</span>
+          <input type="number" id="saronite-rare-sky" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Autumn's Glow</span>
+          <input type="number" id="saronite-rare-autumn" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Monarch Topaz</span>
+          <input type="number" id="saronite-rare-monarch" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Twilight Opal</span>
+          <input type="number" id="saronite-rare-twilight" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Forest Emerald</span>
+          <input type="number" id="saronite-rare-forest" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+      </div>
+
+      <p class="text-gray-400 text-sm mt-4 mb-2">Enchanting mat prices (for shuffle)</p>
+      <div class="grid gap-4 sm:grid-cols-2 mb-4">
+        <label class="block">
+          <span class="text-gray-400 text-sm">Infinite Dust (g per unit)</span>
+          <input type="number" id="saronite-dust" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Greater Cosmic Essence (g per unit)</span>
+          <input type="number" id="saronite-essence" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+      </div>
+
+      <div class="mb-4">
+        <span class="text-gray-400 text-sm block mb-2">Uncommon gems: sell raw or shuffle (craft + DE)</span>
+        <div class="flex flex-wrap gap-4 items-center">
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="saronite-uncommon-mode" value="raw" checked class="rounded border-gray-600 bg-gray-800 text-amber-500 focus:ring-amber-500">
+            <span class="text-gray-300">Sell raw uncommon gems</span>
+          </label>
+          <label class="inline-flex items-center gap-2 cursor-pointer">
+            <input type="radio" name="saronite-uncommon-mode" value="shuffle" class="rounded border-gray-600 bg-gray-800 text-amber-500 focus:ring-amber-500">
+            <span class="text-gray-300">Shuffle (disenchant)</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2 mb-4">
+        <label class="block">
+          <span class="text-gray-400 text-sm">Avg uncommon gem price (g) — for &quot;Sell raw&quot;</span>
+          <input type="number" id="saronite-uncommon-price" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+        <label class="block">
+          <span class="text-gray-400 text-sm">Craft/vendor cost per DE item (g) — for Shuffle</span>
+          <input type="number" id="saronite-craft-cost" min="0" step="0.1" value="0" class="mt-1 w-full rounded border border-gray-600 bg-gray-800 px-3 py-2 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500" placeholder="0">
+        </label>
+      </div>
+
+      <div id="saronite-results" class="rounded-lg border border-gray-600 bg-gray-800/50 p-4 space-y-2">
+        <p class="text-gray-400">Enter prices above to see revenue and profit.</p>
+      </div>
     </main>
   </div>
 
