@@ -515,10 +515,14 @@ body {
   min-width: 12rem;
   padding: 0.4rem 0.6rem;
   font-size: 0.95rem;
-  color: #e8e6e3;
-  background: #1c1b19;
+  color: #111;
+  background: #fff;
   border: 1px solid #3d3b37;
   border-radius: 4px;
+}
+
+.profession-search-input::placeholder {
+  color: #666;
 }
 
 .profession-search-input:focus {
