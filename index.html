@@ -10,44 +10,8 @@
   <aside class="side-panel" id="side-panel" aria-label="Professions and crafters">
     <div class="side-panel-inner">
       <div class="side-panel-content">
-        <ul class="side-panel-list" role="list">
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="engineering">Engineering</button>
-            <div class="side-panel-crafter">Mtjin</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="jewelcrafting">Jewelcrafting</button>
-            <div class="side-panel-crafter">Mtjin</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="enchanting">Enchanting</button>
-            <div class="side-panel-crafter">Lynpeh</div>
-            <div class="side-panel-crafter">Mini</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="blacksmithing">Blacksmithing</button>
-            <div class="side-panel-crafter">—</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="leatherworking">Leatherworking</button>
-            <div class="side-panel-crafter">—</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="tailoring">Tailoring</button>
-            <div class="side-panel-crafter">Mini</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="alchemy">Alchemy</button>
-            <div class="side-panel-crafter">Arats</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="inscription">Inscription</button>
-            <div class="side-panel-crafter">Arats</div>
-          </li>
-          <li class="side-panel-item">
-            <button type="button" class="side-panel-prof-btn" data-profession="cooking">Cooking</button>
-            <div class="side-panel-crafter">Arats</div>
-          </li>
+        <ul class="side-panel-list" id="side-panel-list" role="list">
+          <!-- Filled by JS from static + user crafters -->
         </ul>
       </div>
       <div class="side-panel-tab" aria-hidden="true"><span class="side-panel-tab-arrow" aria-hidden="true">←</span></div>
@@ -81,6 +45,24 @@
       <button type="button" class="top-nav-btn active" data-view="professions">Professions</button>
       <button type="button" class="top-nav-btn" data-view="selling-tips">Selling Tips</button>
     </nav>
+    <section class="crafter-form-section" aria-label="Add your crafter">
+      <p class="crafter-form-title">Add your crafter</p>
+      <form id="crafter-form" class="crafter-form">
+        <table class="crafter-form-table">
+          <tr>
+            <th scope="row"><label for="crafter-name">Name</label></th>
+            <td><input type="text" id="crafter-name" class="crafter-name-input" placeholder="Your character name" maxlength="24" required></td>
+          </tr>
+          <tr>
+            <th scope="row"><span class="crafter-form-label">Professions</span></th>
+            <td><div class="crafter-form-professions" id="crafter-form-professions"></div></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="crafter-form-actions"><button type="submit" class="crafter-form-submit">Add to list</button></td>
+          </tr>
+        </table>
+      </form>
+    </section>
   </header>
 
   <div id="view-professions" class="view-panel">

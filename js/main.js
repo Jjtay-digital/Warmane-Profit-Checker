@@ -54,6 +54,54 @@
     Cooking: 'cooking-tbody'
   };
 
+  var PROFESSION_KEYS = [
+    'engineering', 'jewelcrafting', 'enchanting', 'blacksmithing',
+    'leatherworking', 'tailoring', 'alchemy', 'inscription', 'cooking'
+  ];
+
+  var PROFESSION_LABELS = {
+    engineering: 'Engineering',
+    jewelcrafting: 'Jewelcrafting',
+    enchanting: 'Enchanting',
+    blacksmithing: 'Blacksmithing',
+    leatherworking: 'Leatherworking',
+    tailoring: 'Tailoring',
+    alchemy: 'Alchemy',
+    inscription: 'Inscription',
+    cooking: 'Cooking'
+  };
+
+  var STATIC_CRAFTERS = {
+    engineering: ['Mtjin'],
+    jewelcrafting: ['Mtjin'],
+    enchanting: ['Lynpeh', 'Mini'],
+    blacksmithing: ['—'],
+    leatherworking: ['—'],
+    tailoring: ['Mini'],
+    alchemy: ['Arats'],
+    inscription: ['Arats'],
+    cooking: ['Arats']
+  };
+
+  var CRAFTER_STORAGE_KEY = 'warmane-calculator-crafters';
+
+  function getUserCrafters() {
+    try {
+      var raw = localStorage.getItem(CRAFTER_STORAGE_KEY);
+      if (!raw) return [];
+      var arr = JSON.parse(raw);
+      return Array.isArray(arr) ? arr : [];
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveUserCrafters(arr) {
+    try {
+      localStorage.setItem(CRAFTER_STORAGE_KEY, JSON.stringify(arr));
+    } catch (e) {}
+  }
+
   function formatGold(value) {
     return Number(value).toFixed(1) + 'g';
   }
@@ -166,8 +214,6 @@
 
   var FALLBACK_DATA = {
     Engineering: [
-      { item: "Mechano-Hog / Mekgineer's Chopper", wowheadItemId: 41508, materials: [ { label: "12x Titansteel Bar", price: 0 }, { label: "40x Cobalt Bolt", price: 0 }, { label: "2x Arctic Fur", price: 0 }, { label: "1x Salvaged Iron Golem Parts", price: 0 }, { label: "1x Goblin-machined Piston", price: 0 }, { label: "1x Elementium-plated Exhaust Pipe", price: 0 } ], sellingPrice: 0 },
-      { item: "Titansteel Destroyer / Bonecrusher", wowheadItemId: 41257, materials: [ { label: "8x Saronite Bar", price: 0 }, { label: "8x Titansteel Bar", price: 0 }, { label: "2x Frozen Orb", price: 0 } ], sellingPrice: 0 },
       { item: "Global Thermal Sapper Charge", wowheadItemId: 42641, materials: [ { label: "1x Saronite Bar", price: 0 }, { label: "1x Volatile Blasting Trigger", price: 0 }, { label: "1x Cobalt Bar", price: 0 }, { label: "1x Crystallized Water", price: 0 } ], sellingPrice: 0 }
     ],
     Jewelcrafting: [
@@ -287,16 +333,75 @@
   }
   initTopNav();
 
-  function initSidePanel() {
-    var profBtns = document.querySelectorAll('.side-panel-prof-btn');
+  function renderSidePanel() {
+    var list = document.getElementById('side-panel-list');
+    if (!list) return;
+    var userCrafters = getUserCrafters();
+    list.innerHTML = '';
+    PROFESSION_KEYS.forEach(function (profKey) {
+      var label = PROFESSION_LABELS[profKey];
+      var li = document.createElement('li');
+      li.className = 'side-panel-item';
+      var profBtn = document.createElement('button');
+      profBtn.type = 'button';
+      profBtn.className = 'side-panel-prof-btn';
+      profBtn.setAttribute('data-profession', profKey);
+      profBtn.textContent = label;
+      li.appendChild(profBtn);
+      var staticNames = STATIC_CRAFTERS[profKey] || [];
+      staticNames.forEach(function (name) {
+        var wrap = document.createElement('div');
+        wrap.className = 'side-panel-crafter-wrap';
+        var div = document.createElement('div');
+        div.className = 'side-panel-crafter';
+        div.textContent = name;
+        wrap.appendChild(div);
+        li.appendChild(wrap);
+      });
+      userCrafters.forEach(function (entry) {
+        if (entry.professions && entry.professions.indexOf(profKey) !== -1) {
+          var wrap = document.createElement('div');
+          wrap.className = 'side-panel-crafter-wrap';
+          var div = document.createElement('div');
+          div.className = 'side-panel-crafter';
+          div.textContent = entry.name;
+          wrap.appendChild(div);
+          var delBtn = document.createElement('button');
+          delBtn.type = 'button';
+          delBtn.className = 'crafter-delete-btn';
+          delBtn.setAttribute('data-crafter-id', entry.id);
+          delBtn.textContent = '×';
+          delBtn.title = 'Remove this crafter';
+          wrap.appendChild(delBtn);
+          li.appendChild(wrap);
+        }
+      });
+      list.appendChild(li);
+    });
+    initSidePanelClicks();
+  }
+
+  function initSidePanelClicks() {
+    var list = document.getElementById('side-panel-list');
     var viewProfessions = document.getElementById('view-professions');
     var viewSellingTips = document.getElementById('view-selling-tips');
     var topNavBtns = document.querySelectorAll('.top-nav-btn');
-    profBtns.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var profession = btn.getAttribute('data-profession');
+    if (!list) return;
+    list.addEventListener('click', function (e) {
+      var target = e.target;
+      if (target.classList && target.classList.contains('crafter-delete-btn')) {
+        var id = target.getAttribute('data-crafter-id');
+        if (!id) return;
+        var arr = getUserCrafters().filter(function (entry) { return String(entry.id) !== String(id); });
+        saveUserCrafters(arr);
+        renderSidePanel();
+        return;
+      }
+      var profBtn = target.closest && target.closest('.side-panel-prof-btn');
+      if (profBtn) {
+        var profession = profBtn.getAttribute('data-profession');
         if (viewSellingTips && !viewSellingTips.hidden) {
-          viewProfessions.hidden = false;
+          if (viewProfessions) viewProfessions.hidden = false;
           viewSellingTips.hidden = true;
           topNavBtns.forEach(function (b) {
             b.classList.toggle('active', b.getAttribute('data-view') === 'professions');
@@ -304,8 +409,48 @@
         }
         var tab = document.querySelector('.tab-btn[data-profession="' + profession + '"]');
         if (tab) tab.click();
-      });
+      }
     });
   }
+
+  function initCrafterForm() {
+    var form = document.getElementById('crafter-form');
+    var nameInput = document.getElementById('crafter-name');
+    var professionsEl = document.getElementById('crafter-form-professions');
+    if (!form || !nameInput || !professionsEl) return;
+    PROFESSION_KEYS.forEach(function (key) {
+      var label = document.createElement('label');
+      var cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.name = 'crafter-prof';
+      cb.value = key;
+      label.appendChild(cb);
+      label.appendChild(document.createTextNode(' ' + PROFESSION_LABELS[key]));
+      professionsEl.appendChild(label);
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = (nameInput.value || '').trim();
+      if (!name) return;
+      var checked = professionsEl.querySelectorAll('input[name="crafter-prof"]:checked');
+      var professions = [];
+      checked.forEach(function (cb) {
+        if (cb.value) professions.push(cb.value);
+      });
+      if (professions.length === 0) return;
+      var arr = getUserCrafters();
+      var id = 'crafter-' + Date.now();
+      arr.push({ id: id, name: name, professions: professions });
+      saveUserCrafters(arr);
+      renderSidePanel();
+      nameInput.value = '';
+      professionsEl.querySelectorAll('input[name="crafter-prof"]:checked').forEach(function (cb) { cb.checked = false; });
+    });
+  }
+
+  function initSidePanel() {
+    renderSidePanel();
+  }
+  initCrafterForm();
   initSidePanel();
 })();

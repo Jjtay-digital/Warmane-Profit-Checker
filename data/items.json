@@ -1,29 +1,6 @@
 {
   "Engineering": [
     {
-      "item": "Mechano-Hog / Mekgineer's Chopper",
-      "wowheadItemId": 41508,
-      "materials": [
-        { "label": "12x Titansteel Bar", "price": 0 },
-        { "label": "40x Cobalt Bolt", "price": 0 },
-        { "label": "2x Arctic Fur", "price": 0 },
-        { "label": "1x Salvaged Iron Golem Parts", "price": 0 },
-        { "label": "1x Goblin-machined Piston", "price": 0 },
-        { "label": "1x Elementium-plated Exhaust Pipe", "price": 0 }
-      ],
-      "sellingPrice": 0
-    },
-    {
-      "item": "Titansteel Destroyer / Bonecrusher",
-      "wowheadItemId": 41257,
-      "materials": [
-        { "label": "8x Saronite Bar", "price": 0 },
-        { "label": "8x Titansteel Bar", "price": 0 },
-        { "label": "2x Frozen Orb", "price": 0 }
-      ],
-      "sellingPrice": 0
-    },
-    {
       "item": "Global Thermal Sapper Charge",
       "wowheadItemId": 42641,
       "materials": [
