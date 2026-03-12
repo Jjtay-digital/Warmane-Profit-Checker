@@ -99,7 +99,8 @@
     40027: 3, 40028: 3, 40029: 3, 40030: 3, 40058: 3, 40059: 3, 40060: 3, 40061: 3, 40062: 3, 40063: 3, 40064: 3, 40065: 3,
     40066: 3, 40067: 3, 40068: 3, 40069: 3, 40070: 3, 40071: 3, 40072: 3, 40073: 3, 40074: 3, 40088: 3, 40089: 3, 40090: 3,
     40091: 3, 40092: 3, 40093: 3, 40094: 3, 40095: 3, 40105: 3, 40106: 3, 40114: 3, 40115: 3, 40116: 3, 40117: 3, 40118: 3,
-    40119: 3, 40120: 3, 40121: 3, 40122: 3, 40123: 3, 40124: 3, 40125: 3, 40126: 3, 40127: 3, 40128: 3, 40129: 3
+    40119: 3, 40120: 3, 40121: 3, 40122: 3, 40123: 3, 40124: 3, 40125: 3, 40126: 3, 40127: 3, 40128: 3, 40129: 3,
+    41093: 3, 41118: 3, 40768: 3, 40772: 3
   };
 
   var STATIC_CRAFTERS = {
@@ -156,11 +157,13 @@
 
   function normalizeItem(raw) {
     var wowheadId = raw.wowheadItemId != null ? parseInt(raw.wowheadItemId, 10) : null;
+    var spellId = raw.wowheadSpellId != null ? parseInt(raw.wowheadSpellId, 10) : null;
     var quality = getItemQuality(raw);
     if (raw.materials && Array.isArray(raw.materials)) {
       return {
         item: raw.item,
         wowheadItemId: isNaN(wowheadId) ? null : wowheadId,
+        wowheadSpellId: isNaN(spellId) ? null : spellId,
         quality: quality,
         materials: raw.materials.map(function (m) {
           return { label: m.label || '', price: parseNum(m.price) };
@@ -172,6 +175,7 @@
     return {
       item: raw.item,
       wowheadItemId: isNaN(wowheadId) ? null : wowheadId,
+      wowheadSpellId: isNaN(spellId) ? null : spellId,
       quality: quality,
       materials: labels.length ? labels.map(function (l) { return { label: l, price: 0 }; }) : [{ label: '—', price: 0 }],
       sellingPrice: parseNum(raw.sellingPrice != null ? raw.sellingPrice : raw.materialCost)
@@ -210,8 +214,12 @@
       '</div>';
     }).join('');
     var itemCellHtml = '<div class="item-name">' + escapeHtml(item.item) + '</div>';
-    if (item.wowheadItemId) {
-      var whUrl = 'https://www.wowhead.com/wotlk/item=' + item.wowheadItemId;
+    var whUrl = null;
+    if (item.wowheadSpellId) {
+      whUrl = 'https://www.wowhead.com/wotlk/spell=' + item.wowheadSpellId;
+      itemCellHtml += '<a href="' + escapeHtml(whUrl) + '" class="item-tooltip-link" target="_blank" rel="noopener noreferrer">View spell</a>';
+    } else if (item.wowheadItemId) {
+      whUrl = 'https://www.wowhead.com/wotlk/item=' + item.wowheadItemId;
       itemCellHtml += '<a href="' + escapeHtml(whUrl) + '" class="item-tooltip-link" target="_blank" rel="noopener noreferrer">View item</a>';
     }
     tr.innerHTML =

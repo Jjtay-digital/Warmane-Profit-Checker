@@ -348,16 +348,10 @@
     },
     {
       "item": "MOLL-E",
-      "wowheadItemId": 40772,
+      "wowheadItemId": 40768,
       "materials": [
-        {
-          "label": "8x Saronite Bar",
-          "price": 0
-        },
-        {
-          "label": "2x Crystallized Air",
-          "price": 0
-        }
+        { "label": "8x Saronite Bar", "price": 0 },
+        { "label": "8x Eternal Air", "price": 0 }
       ],
       "sellingPrice": 0
     },
@@ -432,31 +426,19 @@
     },
     {
       "item": "Hyperspeed Accelerators",
-      "wowheadItemId": 54793,
+      "wowheadItemId": 41093,
       "materials": [
-        {
-          "label": "6x Saronite Bar",
-          "price": 0
-        },
-        {
-          "label": "4x Crystallized Air",
-          "price": 0
-        }
+        { "label": "6x Saronite Bar", "price": 0 },
+        { "label": "4x Crystallized Air", "price": 0 }
       ],
       "sellingPrice": 0
     },
     {
       "item": "Reticulated Armor Webbing",
-      "wowheadItemId": 41110,
+      "wowheadSpellId": 63770,
       "materials": [
-        {
-          "label": "4x Saronite Bar",
-          "price": 0
-        },
-        {
-          "label": "2x Eternal Earth",
-          "price": 0
-        }
+        { "label": "4x Saronite Bar", "price": 0 },
+        { "label": "2x Eternal Earth", "price": 0 }
       ],
       "sellingPrice": 0
     },
@@ -515,16 +497,10 @@
     },
     {
       "item": "Nitro Boosts",
-      "wowheadItemId": 55016,
+      "wowheadItemId": 41118,
       "materials": [
-        {
-          "label": "8x Saronite Bar",
-          "price": 0
-        },
-        {
-          "label": "4x Crystallized Air",
-          "price": 0
-        }
+        { "label": "6x Volatile Blasting Trigger", "price": 0 },
+        { "label": "6x Handful of Cobalt Bolts", "price": 0 }
       ],
       "sellingPrice": 0
     },
@@ -532,18 +508,8 @@
       "item": "Mana Injector",
       "wowheadItemId": 41166,
       "materials": [
-        {
-          "label": "4x Saronite Bar",
-          "price": 0
-        },
-        {
-          "label": "2x Crystallized Water",
-          "price": 0
-        },
-        {
-          "label": "1x Frost Lotus",
-          "price": 0
-        }
+        { "label": "12x Saronite Bar", "price": 0 },
+        { "label": "2x Crystallized Water", "price": 0 }
       ],
       "sellingPrice": 0
     },
@@ -551,33 +517,20 @@
       "item": "Healing Injector",
       "wowheadItemId": 41167,
       "materials": [
-        {
-          "label": "4x Saronite Bar",
-          "price": 0
-        },
-        {
-          "label": "2x Crystallized Water",
-          "price": 0
-        },
-        {
-          "label": "1x Frost Lotus",
-          "price": 0
-        }
+        { "label": "12x Saronite Bar", "price": 0 },
+        { "label": "2x Crystallized Water", "price": 0 }
       ],
       "sellingPrice": 0
     },
     {
       "item": "Gnomish Army Knife",
-      "wowheadItemId": 40769,
+      "wowheadItemId": 40772,
       "materials": [
-        {
-          "label": "8x Saronite Bar",
-          "price": 0
-        },
-        {
-          "label": "2x Crystallized Air",
-          "price": 0
-        }
+        { "label": "10x Saronite Bar", "price": 0 },
+        { "label": "20x Saronite Ore", "price": 0 },
+        { "label": "1x Skinning Knife", "price": 0 },
+        { "label": "1x Mining Pick", "price": 0 },
+        { "label": "1x Blacksmith Hammer", "price": 0 }
       ],
       "sellingPrice": 0
     },
